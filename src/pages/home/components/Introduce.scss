@@ -1,0 +1,36 @@
+.introduce-wrap {
+    background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/sec_video_image.jpg);
+    opacity: 1;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    backface-visibility: hidden;
+    .introduce {
+        padding: 0 15px 30px;
+        &-inner {
+            padding: 200px 0px 160px 0px;
+            margin-left: auto;
+            margin-right: auto;
+            h1 {
+                color: #ffff;
+                font-size: 1.7em;
+                line-height: 1.3;
+                margin-bottom: 0.5em;
+            }
+            span {
+                color: #e32124;
+            }
+            .video {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a{
+                    text-decoration: none;
+                    img{
+                        width: 55px;
+                    }
+                }
+            }
+        }
+    }
+}

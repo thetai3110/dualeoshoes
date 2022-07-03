@@ -1,0 +1,115 @@
+.banner {
+    height: 400px;
+    @media (max-width: 700px) {
+        height: 179px;
+    }
+    &-bg1,
+    &-bg2 {
+        height: 400px;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: 50% 50%;
+        position: relative;
+        @media (max-width: 700px) {
+            height: 179px;
+        }
+    }
+    &-bg1 {
+        background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/slider_1.png);
+    }
+    &-bg2 {
+        background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/slider_2.png);
+    }
+    &-box {
+        text-align: right;
+        position: absolute;
+        width: 40%;
+        right: 20%;
+        top: 25%;
+        @media (max-width: 700px) {
+            transform: scale(.7);
+            width: 100%;
+            right: -10%;
+            top: 0;
+        }
+        &-title {
+            text-transform: uppercase;
+            font-size: 2.9em;
+            font-weight: 300;
+            padding: 0;
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            line-height: 1;
+            span {
+                color: #e32124;
+            }
+        }
+        &-text {
+            padding: 0;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        &-link {
+            cursor: pointer;
+            display: inline-block;
+            font-size: .97em;
+            letter-spacing: .03em;
+            font-weight: bolder;
+            text-decoration: none;
+            position: relative;
+            color: #e32124;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            padding-left: 0.15em;
+            padding-right: 0.15em;
+            line-height: 2.4em;
+            min-height: 2.5em;
+            span {
+                display: inline-block;
+                line-height: 1.6;
+            }
+            &::before {
+                content: "";
+                height: 2px;
+                background-color: currentColor;
+                opacity: .3;
+                transition: all .3s;
+                position: absolute;
+                bottom: 0;
+                left: 20%;
+                width: 60%;
+            }
+            &:hover{
+                color: #333;
+                box-shadow: none;
+                &::before {
+                    left: 0%;
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &:hover .slider-arrow{
+        display: block;
+    }
+    .slick-prev, .slick-next {
+        &::before{
+            content: '';
+        }
+       z-index: 1;
+    }
+    .slick-next{
+        right: 3% !important;
+    }
+    .slick-prev{
+        left: 3% !important;
+    }
+    .slider-arrow{
+        display: none;
+        img{
+            width: 20px;
+        }
+    }
+}
+

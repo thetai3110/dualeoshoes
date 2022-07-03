@@ -1,0 +1,19 @@
+.shop {
+    &-item {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 0 9.8px 19.6px;
+        position: relative;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+            transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
