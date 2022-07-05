@@ -1,0 +1,25 @@
+.slick-slider {
+    &:hover .slider-arrow {
+        display: block;
+    }
+    .slick-prev,
+    .slick-next {
+        z-index: 1;
+        &::before {
+            content: '';
+        }
+    }
+    .slick-next {
+        right: 3% !important;
+    }
+    .slick-prev {
+        left: 3% !important;
+    }
+    .slider-arrow {
+        display: none;
+
+        img {
+            width: 20px;
+        }
+    }
+}

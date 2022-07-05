@@ -3,6 +3,7 @@ import './ListItem.scss';
 interface Item {
     image: string,
     label: string,
+    sale?: number,
     oldPrice?: string,
     curPrice: string,
     colors: string[],
@@ -15,11 +16,11 @@ interface ListItem {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-redeclare 
-function Product({ image, label, oldPrice, curPrice, colors }: Item) {
+export function Product({ image, label, sale, oldPrice, curPrice, colors }: Item) {
     return (
         <div className='item-wrap'>
             <div className='item'>
-                <div className='item-badge'>-11%</div>
+                {sale && <div className='item-badge'>{`${sale}%`}</div>}
                 <div className='item-content'>
                     <div className='item-content-image'>
                         <img src={image} alt={label} />
@@ -58,7 +59,7 @@ export default function ListItem({ label, items, children }: ListItem) {
                 <div className='list'>
                     {items.map((el, idx) => {
                         return (
-                            <Product key={idx} image={el.image} label={el.label} oldPrice={el.oldPrice} curPrice={el.curPrice} colors={el.colors} />
+                            <Product key={idx} image={el.image} label={el.label} sale={el.sale} oldPrice={el.oldPrice} curPrice={el.curPrice} colors={el.colors} />
                         )
                     })}
                 </div>

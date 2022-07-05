@@ -90,26 +90,5 @@
             }
         }
     }
-    &:hover .slider-arrow{
-        display: block;
-    }
-    .slick-prev, .slick-next {
-        &::before{
-            content: '';
-        }
-       z-index: 1;
-    }
-    .slick-next{
-        right: 3% !important;
-    }
-    .slick-prev{
-        left: 3% !important;
-    }
-    .slider-arrow{
-        display: none;
-        img{
-            width: 20px;
-        }
-    }
 }
 

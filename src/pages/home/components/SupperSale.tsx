@@ -14,6 +14,7 @@ export default function Sale() {
         {
             image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/xam-9-c51956f3-235d-43d3-9dd3-327cc0a9d60b.jpg',
             label: 'Giày búp bê xu hướng oxford mũi nhọn',
+            sale: 11,
             oldPrice: '350,000₫',
             curPrice: '310,000₫',
             colors: ['black', 'gray']
@@ -27,6 +28,7 @@ export default function Sale() {
         {
             image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-ralidien-65-rg-6bd5e8ac14064de5894325a665997e71.jpg',
             label: 'Giày cao gót Heels Ralidien',
+            sale: 20,
             oldPrice: '700,000₫',
             curPrice: '550,000₫',
             colors: ['black', 'gray', 'pink']
@@ -34,6 +36,7 @@ export default function Sale() {
         {
             image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/xam-2-86c62056-d94f-4d6b-42ee-8693e7de353c-1.jpg',
             label: 'Giày búp bê mũi nhọn đính nơ thanh lịch',
+            sale: 11,
             oldPrice: '350,000₫',
             curPrice: '295,000₫',
             colors: ['black', 'pink', 'gray']

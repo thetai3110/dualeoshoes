@@ -1,3 +1,4 @@
+import SliderCustom from '../../../components/slider/SliderCustom';
 import './SaleInfo.scss';
 
 interface Props {
@@ -48,23 +49,59 @@ export default function SaleInfo() {
         }
     ]
 
+    const settings = {
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            }
+          ]
+    };
+
     return (
-        <div className='list-item sale-info flex-col container'>
-            <div className='heading-wrap flex-row'>
-                <div className='heading'>
-                    <div className='heading-inner'>
-                        <h1 className='label'>thông tin khuyến mãi</h1>
-                        <div className='divider'></div>
+        <>
+            <div className='list-item sale-info container'>
+                <div className='heading-wrap flex-row'>
+                    <div className='heading'>
+                        <div className='heading-inner'>
+                            <h1 className='label'>thông tin khuyến mãi</h1>
+                            <div className='divider'></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className='list-area flex-col'>
-                <div className='list'>
-                    {posts.map((el, idx) => {
-                        return <Post key={idx} image={el.image} label={el.label} date={el.date} desc={el.desc} />
-                    })}
+                <div className='list-area'>
+                    <SliderCustom settings={settings}>
+                        {[...posts, ...posts].map((el, idx) => {
+                            return <Post key={idx} image={el.image} label={el.label} date={el.date} desc={el.desc} />
+                        })}
+                    </SliderCustom>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

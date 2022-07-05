@@ -1,21 +1,8 @@
 .post-wrap {
-    max-width: 33.33333%;
-    flex-basis: 33.33333%;
-    padding: 0 15px 30px;
-    width: 100%;
     cursor: pointer;
-    @media (max-width: 1024px) {
-        max-width: 50%;
-        flex-basis: 50%;
-    }
-    @media (max-width: 700px) {
-        max-width: 100%;
-        flex-basis: 100%;
-    }
+    padding: 0 15px 30px;
     .post {
         &-image {
-            height: auto;
-            margin: 0 auto;
             padding-top: 60%;
             position: relative;
             img {
@@ -26,9 +13,7 @@
                 left: 0;
                 top: 0;
                 position: absolute;
-                object-position: 50% 50%;
                 object-fit: cover;
-                font-family: 'object-fit: cover;';
             }
         }
         &-info {
@@ -99,13 +84,7 @@
             }
         }
     }
-
     .list-area {
         padding: 0 15px 30px;
-        .list {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-        }
     }
 }

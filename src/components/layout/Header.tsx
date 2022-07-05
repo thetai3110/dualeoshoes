@@ -62,7 +62,6 @@ export default function Header() {
   const handleScroll = () => {
     const menu = menuRef.current || menuMbRef.current;
     if (menu) {
-      console.log(menu)
       const sticky = menu.offsetTop;
       if (window.pageYOffset > sticky) {
         menu.classList.add("sticky");
@@ -88,7 +87,7 @@ export default function Header() {
         </div>
       </div>
       <div className='menu menu-desktop' ref={menuRef}>
-        <div className=' flex-row container'>
+        <div className='menu-inner flex-row container'>
           <div className="menu-logo">
             <a href='/#'><img src={logo} alt="Dua Leo Shoes" /></a>
           </div>
@@ -126,7 +125,7 @@ export default function Header() {
       </div>
       {/* Mobile */}
       <div className='menu menu-mobile ' ref={menuMbRef}>
-        <div className='flex-row container'>
+        <div className='menu-inner flex-row container'>
           <div className='menu-mobile-icon' onClick={handleMenuClick}><img src={icMenu} alt='' /></div>
           <div className="menu-logo">
             <a href='/#'>

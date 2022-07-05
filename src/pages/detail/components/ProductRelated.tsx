@@ -1,8 +1,8 @@
-import ListItem from '../../../components/layout/ListItem';
+import { Product } from '../../../components/layout/ListItem';
+import SliderCustom from '../../../components/slider/SliderCustom';
+import './ProductRelated.scss';
 
-import './New.scss';
-
-export default function New() {
+export default function ProductSimilar() {
     const products = [
         {
             image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/kem-cg05055-1-grande-1.jpg',
@@ -42,7 +42,51 @@ export default function New() {
         }
     ]
 
+    const settings = {
+        infinite: false,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+    };
+
     return (
-        <ListItem label='những sản phẩm mới nhất' items={[...products, ...products, ...products]} />
+        <div className='list-item product-similar container'>
+            <h3 className='label'>sản phẩm tương tự</h3>
+            <div className='list-area'>
+                <SliderCustom settings={settings}>
+                    {[...products, ...products].map((el, idx) => {
+                        return <Product key={idx} image={el.image} label={el.label} sale={el.sale} oldPrice={el.oldPrice} curPrice={el.curPrice} colors={el.colors} />
+                    })}
+                </SliderCustom>
+            </div>
+        </div>
+
     )
 }
