@@ -1,8 +1,9 @@
 import { Product } from '../../../components/layout/ListItem';
 import SliderCustom from '../../../components/slider/SliderCustom';
+
 import './ProductRelated.scss';
 
-export default function ProductSimilar() {
+export default function ProductRelated() {
     const products = [
         {
             image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/kem-cg05055-1-grande-1.jpg',

@@ -1,0 +1,11 @@
+.product-gallery-wrap{
+    display: flex;
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    .product-gallery{    
+        padding: 0 15px 30px;
+        img{
+            width: 100%;
+        }
+    }
+}
