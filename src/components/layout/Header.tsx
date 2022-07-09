@@ -37,24 +37,6 @@ export default function Header() {
     { image: menuItem6, label: 'Chỉ đường' }
   ]
 
-  const handleMenuClick = () => {
-    const mainMenu = document.querySelector('.menu-mobile .menu-left') as HTMLElement | null;
-    const overlap = document.querySelector('.overlap') as HTMLElement | null;
-    if (mainMenu && overlap) {
-      mainMenu.style.transform = 'translateX(0)';
-      overlap.style.display = 'block';
-    }
-  }
-
-  const handleCloseMenu = () => {
-    const mainMenu = document.querySelector('.menu-mobile .menu-left') as HTMLElement | null;
-    const overlap = document.querySelector('.overlap') as HTMLElement | null;
-    if (mainMenu && overlap) {
-      mainMenu.style.transform = 'translateX(-320px)';
-      overlap.style.display = 'none';
-    }
-  }
-
   const handleClickItem = (idx: number) => {
     setActive(active === idx ? -1 : idx)
   }
@@ -86,18 +68,26 @@ export default function Header() {
           <a className="top-bar-login" href="/#" ><span>Đăng nhập</span></a>
         </div>
       </div>
-      <div className='menu menu-desktop' ref={menuRef}>
-        <div className='menu-inner flex-row container'>
+      <div className='menu-wrap' ref={menuRef}>
+        <div className='menu flex-row container'>
+          <label htmlFor='ck-menu-left' className='menu-mobile-icon'><img src={icMenu} alt='' /></label>
           <div className="menu-logo">
             <a href='/#'><img src={logo} alt="Dua Leo Shoes" /></a>
           </div>
+          <div className='menu-mobile-icon'>
+            <a href="/#" title="Giỏ hàng">
+              <img src={icCart} alt='' />
+            </a>
+          </div>
+          <input type='checkbox' name='ck-menu-left' id='ck-menu-left'/>
           <ul className="menu-left">
             {menus.map((el, idx) => {
-              return <li key={idx} className={`menu-left-item ${active === idx ? 'active' : ''}`} onClick={() => handleClickItem(idx)}>
+              return <li key={idx} className={`menu-left-item ${active === idx ? 'active' : ''}`}>
                 <a href='/#'>
                   <img src={el.image} alt={el.label} />
                   <span>{el.label}</span>
                 </a>
+                {el.children && <img className='menu-mobile-icon' onClick={() => handleClickItem(idx)} src={active === idx ? icUp : icDown} alt='' />}
                 {el.children &&
                   <ul className='menu-child'>
                     {el.children.map((el, idx) => {
@@ -107,6 +97,8 @@ export default function Header() {
               </li>
             })}
           </ul>
+          <label htmlFor='ck-menu-left' className='overlap'></label>
+          <label htmlFor='ck-menu-left' className='menu-close'>x</label>
           <ul className="menu-right">
             <li className='menu-right-divider'></li>
             <li className='menu-right-search'>
@@ -123,41 +115,6 @@ export default function Header() {
           </ul>
         </div>
       </div>
-      {/* Mobile */}
-      <div className='menu menu-mobile ' ref={menuMbRef}>
-        <div className='menu-inner flex-row container'>
-          <div className='menu-mobile-icon' onClick={handleMenuClick}><img src={icMenu} alt='' /></div>
-          <div className="menu-logo">
-            <a href='/#'>
-              <img src={logo} alt="Dua Leo Shoes" />
-            </a>
-          </div>
-          <div className='menu-mobile-icon'>
-            <a href="/#" title="Giỏ hàng">
-              <img src={icCart} alt='' />
-            </a>
-          </div>
-          <ul className="menu-left">
-            {menus.map((el, idx) => {
-              return <li key={idx} className={`menu-left-item ${active === idx ? 'active' : ''}`} >
-                <a href='/#'>
-                  <img src={el.image} alt={el.label} />
-                  <span>{el.label}</span>
-                </a>
-                {el.children && <img onClick={() => handleClickItem(idx)} src={active === idx ? icUp : icDown} alt='' />}
-                {el.children &&
-                  <ul className='menu-child'>
-                    {el.children.map((el, idx) => {
-                      return <li key={`child-${idx}`} className="child-item"><a href='/#'>{el.label}</a></li>
-                    })}
-                  </ul>}
-              </li>
-            })}
-          </ul>
-        </div>
-      </div>
-      <div className='overlap' onClick={handleCloseMenu}></div>
-      <div className='menu-close' onClick={handleCloseMenu}>x</div>
     </header>
   )
 }
