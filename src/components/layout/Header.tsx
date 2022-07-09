@@ -11,11 +11,13 @@ import icCart from '../../assets/images/Home/ic_cart.png';
 import icMenu from '../../assets/images/Home/ic_menu.png';
 import icDown from '../../assets/images/Home/ic_down.png';
 import icUp from '../../assets/images/Home/ic_up.png';
+import { SearchBox } from './SearchBox';
 
 import './Header.scss';
 
 export default function Header() {
   const [active, setActive] = React.useState(-1);
+  const [isShowSearchBox, setShowSearchBox] = React.useState(false);
   const menuRef = React.useRef<HTMLDivElement>(null);
   const menuMbRef = React.useRef<HTMLDivElement>(null);
 
@@ -39,6 +41,14 @@ export default function Header() {
 
   const handleClickItem = (idx: number) => {
     setActive(active === idx ? -1 : idx)
+  }
+
+  const handleSearch = () => {
+    setShowSearchBox(true);
+  }
+
+  const handleCloseSearchBox = ()=>{
+    setShowSearchBox(false);
   }
 
   const handleScroll = () => {
@@ -83,7 +93,7 @@ export default function Header() {
           <ul className="menu-left">
             {menus.map((el, idx) => {
               return <li key={idx} className={`menu-left-item ${active === idx ? 'active' : ''}`}>
-                <a href='/#'>
+                <a href='/#' className='link'>
                   <img src={el.image} alt={el.label} />
                   <span>{el.label}</span>
                 </a>
@@ -91,7 +101,7 @@ export default function Header() {
                 {el.children &&
                   <ul className='menu-child'>
                     {el.children.map((el, idx) => {
-                      return <li key={`child-${idx}`} className="child-item"><a href='/#'>{el.label}</a></li>
+                      return <li key={`menu-child-${idx}`} className="menu-child-item"><a href='/#' className='link'>{el.label}</a></li>
                     })}
                   </ul>}
               </li>
@@ -101,7 +111,7 @@ export default function Header() {
           <label htmlFor='ck-menu-left' className='menu-close'>x</label>
           <ul className="menu-right">
             <li className='menu-right-divider'></li>
-            <li className='menu-right-search'>
+            <li className='menu-right-search' onClick={handleSearch}>
               <a href='/#'><img src={icSearch} alt='' /></a>
             </li>
             <li className='menu-right-divider'></li>
@@ -115,6 +125,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
+      {isShowSearchBox && <SearchBox onClose={handleCloseSearchBox}/>}
     </header>
   )
 }

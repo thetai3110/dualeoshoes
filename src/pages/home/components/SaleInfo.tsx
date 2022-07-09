@@ -17,10 +17,10 @@ function Post({ image, label, date, desc }: Props) {
                     <img src={image} alt={label} />
                 </div>
                 <div className='post-info'>
-                    <h5 className='title'>{label}</h5>
-                    <div className='date'>{date}</div>
-                    <div className='divider'></div>
-                    <p className='desc'>{desc}</p>
+                    <h5 className='post-info-title'>{label}</h5>
+                    <div className='post-info-date'>{date}</div>
+                    <div className='post-info-divider'></div>
+                    <p className='post-info-desc'>{desc}</p>
                 </div>
             </div>
         </div>
@@ -84,13 +84,13 @@ export default function SaleInfo() {
     };
 
     return (
-        <>
-            <div className='list-item sale-info container'>
+        <div className='sale-info'>
+            <div className='list-item container'>
                 <div className='heading-wrap flex-row'>
                     <div className='heading'>
                         <div className='heading-inner'>
-                            <h1 className='label'>thông tin khuyến mãi</h1>
-                            <div className='divider'></div>
+                            <h1 className='heading-label'>thông tin khuyến mãi</h1>
+                            <div className='heading-divider'></div>
                         </div>
                     </div>
                 </div>
@@ -102,6 +102,6 @@ export default function SaleInfo() {
                     </SliderCustom>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

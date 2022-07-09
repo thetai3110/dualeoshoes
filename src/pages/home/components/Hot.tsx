@@ -26,7 +26,7 @@ export default function Hot() {
         },
         {
             image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-ralidien-65-rg-6bd5e8ac14064de5894325a665997e71.jpg',
-            label: 'Giày cao gót Heels Ralidien',    
+            label: 'Giày cao gót Heels Ralidien',
             sale: 20,
             oldPrice: '700,000₫',
             curPrice: '550,000₫',
@@ -42,6 +42,8 @@ export default function Hot() {
         }
     ]
     return (
-        <ListItem label='top 10 sản phẩm hot tuần này' items={products} />
+        <div className='hot'>
+            <ListItem label='top 10 sản phẩm hot tuần này' items={products} />
+        </div>
     )
 }

@@ -43,6 +43,8 @@ export default function New() {
     ]
 
     return (
-        <ListItem label='những sản phẩm mới nhất' items={[...products, ...products, ...products]} />
+        <div className='new'>
+            <ListItem label='những sản phẩm mới nhất' items={[...products, ...products, ...products]} />
+        </div>
     )
 }

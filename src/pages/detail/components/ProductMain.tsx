@@ -9,7 +9,7 @@ export default function ProductMain() {
         <div className='product-main'>
             <div className='container'>
                 <ProductGallery />
-                <ProductDetail />
+                <ProductDetail/>
                 <Sidebar />
             </div>
         </div>

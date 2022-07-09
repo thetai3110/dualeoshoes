@@ -78,16 +78,17 @@ export default function ProductRelated() {
     };
 
     return (
-        <div className='list-item product-similar container'>
-            <h3 className='label'>sản phẩm tương tự</h3>
-            <div className='list-area'>
-                <SliderCustom settings={settings}>
-                    {[...products, ...products].map((el, idx) => {
-                        return <Product key={idx} image={el.image} label={el.label} sale={el.sale} oldPrice={el.oldPrice} curPrice={el.curPrice} colors={el.colors} />
-                    })}
-                </SliderCustom>
+        <div className='product-related'>
+            <div className='list-item container'>
+                <h3 className='label'>sản phẩm tương tự</h3>
+                <div className='list-area'>
+                    <SliderCustom settings={settings}>
+                        {[...products, ...products].map((el, idx) => {
+                            return <Product key={idx} image={el.image} label={el.label} sale={el.sale} oldPrice={el.oldPrice} curPrice={el.curPrice} colors={el.colors} />
+                        })}
+                    </SliderCustom>
+                </div>
             </div>
         </div>
-
     )
 }

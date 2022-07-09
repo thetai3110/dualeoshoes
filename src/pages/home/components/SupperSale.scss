@@ -1,27 +1,29 @@
-.supper-sale-time {
-    display: table;
-    width: 38%;
-    height: 100%;
-    border-spacing: 5px;
-    margin: 0.3em auto 0.2em;
-    line-height: 1.6;
-
-    span {
-        background: #e32124;
-        border-radius: 99px;
-        color: #fff;
-        padding: 8px;
-        margin: 0 0.05em 0.2em;
-        display: table-cell;
-        font-weight: bolder;
-        text-align: center;
-        line-height: 80%;
-
-        strong {
-            font-size: 30%;
-            opacity: .7;
-            text-transform: uppercase;
-            display: block;
+.supper-sale{
+    .heading-inner{
+        padding: 50px 0 0 0 !important;
+    }
+    .supper-sale-time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0.3em 0 0.2em;
+        line-height: 1.6;
+        span {
+            background: #e32124;
+            border-radius: 99px;
+            color: #fff;
+            padding: 8px 20px;
+            margin: 0 0.05em 0.2em;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 80%;
+            strong {
+                font-size: 30%;
+                opacity: .7;
+                text-transform: uppercase;
+                display: block;
+            }
         }
     }
 }

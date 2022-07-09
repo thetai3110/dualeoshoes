@@ -44,12 +44,14 @@ export default function Sale() {
     ]
 
     return (
-        <ListItem  label='siêu khuyến mãi' items={products}>
-            <div className='supper-sale-time'>
-                <span>0<strong>giờ</strong></span>
-                <span>0<strong>phút</strong></span>
-                <span>0<strong>giây</strong></span>
-            </div>
-        </ListItem>
+        <div className='supper-sale'>
+            <ListItem label='siêu khuyến mãi' items={products}>
+                <div className='supper-sale-time'>
+                    <span>0<strong>giờ</strong></span>
+                    <span>0<strong>phút</strong></span>
+                    <span>0<strong>giây</strong></span>
+                </div>
+            </ListItem>
+        </div>
     )
 }

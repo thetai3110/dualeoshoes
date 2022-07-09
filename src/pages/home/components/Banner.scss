@@ -3,8 +3,8 @@
     @media (max-width: 700px) {
         height: 179px;
     }
-    &-bg1,
-    &-bg2 {
+    .banner-bg1,
+    .banner-bg2 {
         height: 400px;
         background-size: cover !important;
         background-repeat: no-repeat !important;
@@ -14,13 +14,13 @@
             height: 179px;
         }
     }
-    &-bg1 {
+    .banner-bg1 {
         background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/slider_1.png);
     }
-    &-bg2 {
+    .banner-bg2 {
         background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/slider_2.png);
     }
-    &-box {
+    .banner-box {
         text-align: right;
         position: absolute;
         width: 40%;
@@ -32,7 +32,7 @@
             right: -10%;
             top: 0;
         }
-        &-title {
+        .banner-box-title {
             text-transform: uppercase;
             font-size: 2.9em;
             font-weight: 300;
@@ -44,12 +44,12 @@
                 color: #e32124;
             }
         }
-        &-text {
+        .banner-box-text {
             padding: 0;
             margin-top: 1em;
             margin-bottom: 1em;
         }
-        &-link {
+        .banner-box-link {
             cursor: pointer;
             display: inline-block;
             font-size: .97em;

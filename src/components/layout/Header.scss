@@ -17,8 +17,6 @@
             }
             .top-bar-login {
                 color: rgba(102, 102, 102, 0.85);
-                transition: all .2s;
-                text-decoration: none;
                 vertical-align: top;
                 padding-top: 5px;
                 padding-bottom: 5px;
@@ -61,7 +59,7 @@
                 .menu-left-item {
                     position: relative;
                     margin: 0 15px;
-                    a {
+                    .link {
                         display: flex;
                         flex-direction: column;
                         padding: 0 15px;
@@ -75,7 +73,7 @@
                     }
                     &.active span,
                     &:hover span {
-                        font-weight: 500;
+                        font-weight: 700;
                         color: #e32124;
                     }
                 }
@@ -85,14 +83,13 @@
                 .menu-child{
                     display: none;
                     position: absolute;
-                    list-style: none;
                     min-width: 260px;
                     background-color: #fff;
                     box-shadow: 1px 1px 15px rgb(0 0 0 / 15%);
                     border: 1px solid #ddd;
                     padding: 20px 0 20px;
-                    .child-item{
-                        a{
+                    .menu-child-item{
+                        .link {
                             padding: 10px 20px;
                             font-size: 90%;
                             line-height: 1.3;
@@ -134,6 +131,9 @@
                     a {
                         display: flex;
                         align-items: center;
+                        &:hover{
+                            color: currentColor !important;
+                        }
                         img {
                             width: 20px;
                             margin-left: 5px;
@@ -167,18 +167,6 @@
         width: 100%;
         box-shadow: 1px 1px 10px rgb(0 0 0 / 15%);
         opacity: .9;
-    }
-    .overlap{
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 2;
-        background-color: #000;
-        opacity: 0.7;
-        cursor: pointer;
     }
     .menu-close{
         display: none;
@@ -214,7 +202,7 @@
                 position: absolute;
                 list-style: none;
                 background-color: #fff;
-                z-index: 3;
+                z-index: 1001;
                 left: 0;
                 top: 0;
                 height: 100vh;
@@ -266,14 +254,15 @@
                     border: none;
                     padding-bottom: 30px;
                     opacity: .8;
-                    .child-item{
+                    .menu-child-item{
                         display: flex;
                         padding-left: 0.5em;
                         opacity: .8;
                         &:hover {
                             opacity: 1;
+                            box-shadow: unset !important;
                         }
-                        a{
+                        .link {
                             padding-left: 20px;
                             padding-top: 5px;
                             padding-bottom: 5px;

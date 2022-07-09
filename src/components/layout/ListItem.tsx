@@ -49,8 +49,8 @@ export default function ListItem({ label, items, children }: ListItem) {
             <div className='heading-wrap flex-row'>
                 <div className='heading'>
                     <div className='heading-inner'>
-                        <h1 className='label'>{label}</h1>
-                        <div className='divider'></div>
+                        <h1 className='heading-label'>{label}</h1>
+                        <div className='heading-divider'></div>
                         {children}
                     </div>
                 </div>
@@ -64,7 +64,7 @@ export default function ListItem({ label, items, children }: ListItem) {
                     })}
                 </div>
                 <div style={{ paddingTop: '10px' }}></div>
-                <a href="/#" className='btn-view-all'>
+                <a href="/#" className='btn btn-view-all'>
                     <span>Xem tất cả</span>
                 </a>
             </div>

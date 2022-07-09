@@ -8,33 +8,28 @@
         padding: 20px 0 0 0;
         margin-bottom: 1.5em;
         border: 1px solid #eee;
-        .sidebar-item-inner{
+        .policy-wrap{
+            flex-direction: column;
             padding-left: 30px;
             padding-right: 30px;
-            .policy-wrap{
-                flex-direction: column;
-                .policy{
-                    flex-basis: 100%;
-                    max-width: 100%;
-                    border-bottom: 1px solid #eee;
-                    padding: 15px 0;
-                    .policy-inner{
-                        padding: 0px;
-                    }
+            .policy{
+                flex-basis: 100%;
+                max-width: 100%;
+                border-bottom: 1px solid #eee;
+                padding: 15px 0;
+                .policy-inner{
+                    padding: 0px;
                     img{
                         width: 45px;
                     }
                     .text{
                         padding-left: 1em;
-                        font-size: 13px;
-                        h5{
-                            font-size: .9em;
-                        }
+                        font-size: .8em;
                     }
                 }
             }
         }
-        .title{
+        .sidebar-item-title{
             padding: 20px;
             font-size: 1em;
             font-weight: 600;
@@ -42,7 +37,7 @@
             letter-spacing: .05em;
             text-transform: uppercase;
         }
-        .divider{
+        .sidebar-item-divider{
             height: 1px;
             display: block;
             background-color: rgba(0,0,0,0.1);
@@ -71,8 +66,11 @@
                 overflow: hidden;
                 vertical-align: top;
                 line-height: 1.33;
-                font-size: .9em;
-                a{
+                &:hover  .product-item-link,
+                &:hover  .amount{
+                    color: #e32124;
+                }
+                .product-item-link{
                     text-decoration: none;
                     color: #000000;
                     overflow: hidden;
@@ -80,16 +78,16 @@
                     display: -webkit-box;
                     height: 1.3em;
                     margin-bottom: 5px;
-                }
-                img{
-                    top: 10px;
-                    position: absolute;
-                    left: 20px;
-                    width: 60px;
-                    height: 60px;
-                    margin-bottom: 5px;
-                    object-fit: cover;
-                    object-position: 50% 50%;
+                    img{
+                        top: 10px;
+                        position: absolute;
+                        left: 20px;
+                        width: 60px;
+                        height: 60px;
+                        margin-bottom: 5px;
+                        object-fit: cover;
+                        object-position: 50% 50%;
+                    }
                 }
                 span.amount{
                     white-space: nowrap;
