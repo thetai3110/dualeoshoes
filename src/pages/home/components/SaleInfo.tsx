@@ -57,30 +57,30 @@ export default function SaleInfo() {
         initialSlide: 0,
         responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
             },
             {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
             },
             {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-          ]
+        ]
     };
 
     return (
@@ -89,17 +89,20 @@ export default function SaleInfo() {
                 <div className='GMEliOrZJA IduJqlyHst'>
                     <div className='zyfltpEFsT'>
                         <div className='KNxqRBUeOK'>
-                            <h1 className='NZnEBNDEjt'>thông tin khuyến mãi</h1>
+                            <h1 className='NZnEBNDEjt'>THÔNG TIN KHUYẾN MÃI</h1>
                             <div className='WuQaTowAisr'></div>
                         </div>
                     </div>
                 </div>
+                <div style={{ height: 'auto', paddingTop: '10px' }}></div>
                 <div className='ymFGhSoODA'>
-                    <SliderCustom settings={settings}>
-                        {[...posts, ...posts].map((el, idx) => {
-                            return <Post key={idx} image={el.image} label={el.label} date={el.date} desc={el.desc} />
-                        })}
-                    </SliderCustom>
+                    <div className='vssWVIKAyL'>
+                        <SliderCustom settings={settings}>
+                            {[...posts, ...posts].map((el, idx) => {
+                                return <Post key={idx} image={el.image} label={el.label} date={el.date} desc={el.desc} />
+                            })}
+                        </SliderCustom>
+                    </div>
                 </div>
             </div>
         </div>

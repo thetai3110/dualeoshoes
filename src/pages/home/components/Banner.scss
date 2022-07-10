@@ -40,6 +40,7 @@
             margin-top: 0.2em;
             margin-bottom: 0.2em;
             line-height: 1;
+            font-family: 'Lora', sans-serif;
             span {
                 color: #e32124;
             }
@@ -55,7 +56,6 @@
             font-size: .97em;
             letter-spacing: .03em;
             font-weight: bolder;
-            text-decoration: none;
             position: relative;
             color: #e32124;
             margin-top: 0.5em;
@@ -64,6 +64,7 @@
             padding-right: 0.15em;
             line-height: 2.4em;
             min-height: 2.5em;
+            border: 1px solid transparent;
             span {
                 display: inline-block;
                 line-height: 1.6;

@@ -45,7 +45,7 @@ export default function Sale() {
 
     return (
         <div className='eUzKgZjUpU'>
-            <ListItem label='siêu khuyến mãi' items={products}>
+            <ListItem label='SIÊU KHUYẾN MÃI' items={products}>
                 <div className='DlstqYgvUK'>
                     <span>0<strong>giờ</strong></span>
                     <span>0<strong>phút</strong></span>

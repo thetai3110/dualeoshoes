@@ -12,38 +12,38 @@ export default function Footer() {
                     <div className='GhcDbDrkde'>
                         <div className='OQCeehNRxg'>
                             <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand1-1.png" alt='' />
-                            <div className="TJfvUOjrBHp"></div>
                         </div>
+                        <div className="TJfvUOjrBHp"></div>
                     </div>
                     <div className='GhcDbDrkde'>
                         <div className='OQCeehNRxg'>
                             <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand2-1.png" alt='' />
-                            <div className="TJfvUOjrBHp"></div>
                         </div>
+                        <div className="TJfvUOjrBHp"></div>
                     </div>
                     <div className='GhcDbDrkde'>
                         <div className='OQCeehNRxg'>
                             <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand1.png" alt='' />
-                            <div className="TJfvUOjrBHp"></div>
                         </div>
+                        <div className="TJfvUOjrBHp"></div>
                     </div>
                     <div className='GhcDbDrkde'>
                         <div className='OQCeehNRxg'>
                             <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand2.png" alt='' />
-                            <div className="TJfvUOjrBHp"></div>
                         </div>
+                        <div className="TJfvUOjrBHp"></div>
                     </div>
                     <div className='GhcDbDrkde'>
                         <div className='OQCeehNRxg'>
                             <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand3.png" alt='' />
-                            <div className="TJfvUOjrBHp"></div>
                         </div>
+                        <div className="TJfvUOjrBHp"></div>
                     </div>
                     <div className='GhcDbDrkde'>
                         <div className='OQCeehNRxg'>
                             <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand4.png" alt='' />
-                            <div className="TJfvUOjrBHp"></div>
                         </div>
+                        <div className="TJfvUOjrBHp"></div>
                     </div>
                 </div>
             </div>
@@ -99,8 +99,10 @@ export default function Footer() {
             </div>
             <div style={{ paddingTop: '20px' }}></div>
             <div className='IbjSsfImcO'>
-                <div className='GOoPlZeBbT IduJqlyHst container'>
-                    © Bản quyền thuộc về . Thiết kế website MonaMedia Mona Media
+                <div className='GOoPlZeBbT IduJqlyHst TlbZfgabaX'>
+                    © Bản quyền thuộc về . Thiết kế website
+                    <img className='StIePocWXN' src="http://mona-media.com/logo.png" alt="MonaMedia"></img>
+                    <strong>Mona Media</strong>
                 </div>
             </div>
         </div >

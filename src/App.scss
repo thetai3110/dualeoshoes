@@ -33,7 +33,7 @@ textarea{
     transition: color .3s, border .3s, background .3s, opacity .3s;
 }
 input{
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
 }
 input[type='text']{
     outline: none;
@@ -76,7 +76,6 @@ h6 {
     vertical-align: middle;
     border-radius: 0;
     margin-top: 0;
-    margin-right: 1em;
     text-shadow: none;
     line-height: 2.4em;
     min-height: 2.5em;
@@ -114,7 +113,6 @@ h6 {
     }
 }
 .RBDSpJPOdl{
-    display: none;
     position: fixed;
     top: 0;
     left: 0;

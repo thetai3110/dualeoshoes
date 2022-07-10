@@ -1,21 +1,21 @@
 .jOiYILkjZY {
+    flex-wrap: wrap !important;
     .GyiFaOhMmT {
         flex-basis: 50%;
         max-width: 50%;
         padding: 0 9.8px 19.6px;
+        @media (max-width: 700px) {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
         .EZxjQshWfF{
             position: relative;
             overflow: hidden;
-            padding-top: 30%;
             img {
-                position: absolute;
                 max-width: 100%;
-                max-height: 100%;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                object-fit: cover;
+                height: auto;
+                display: inline-block;
+                vertical-align: middle;
                 transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
                 &:hover {
                     transform: scale(1.1);

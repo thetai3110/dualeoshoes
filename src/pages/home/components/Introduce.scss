@@ -1,30 +1,88 @@
 .OfeNcTkpVP {
-    background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/sec_video_image.jpg);
-    opacity: 1;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: 50% 50%;
-    backface-visibility: hidden;
-    .hrfBLAUcyF {
-        padding: 0 15px 30px;
-        .CzcQGWncKO {
-            padding: 200px 0px 160px 0px;
-            margin-left: auto;
-            margin-right: auto;
-            .iROmSoxAeJG {
-                color: #ffff;
-                font-size: 1.7em;
-                line-height: 1.3;
-                span {
-                    color: #e32124;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    position: relative;
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    .TyHrUZtJJH{
+        height: 556px;
+        width: 100%;
+        // transform: translate3d(0px, -320.66px, 0px);
+        backface-visibility: hidden;
+        background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/sec_video_image.jpg);
+        overflow: hidden;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: 50% 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .SYKXMSMCip{
+        position: relative !important;
+        width: 100%;
+        z-index: 1;
+        .hrfBLAUcyF {
+            max-width: 100%;
+            flex-basis: 100%;
+            padding: 0 15px 30px;
+            position: relative;
+            margin: 0;
+            padding: 0 15px 30px;
+            width: 100%;
+            .CzcQGWncKO {
+                padding: 200px 0px 160px 0px;
+                margin-left: auto;
+                margin-right: 0;
+                color: #f1f1f1;
+                text-align: center;
+                .iROmSoxAeJG {
+                    font-family: "Lora", sans-serif;
+                    color: #ffff;
+                    font-size: 1.7em;
+                    line-height: 1.3;
+                    width: 100%;
+                    span {
+                        color: #e32124;
+                    }
                 }
-            }
-            .atAQmFOtDW {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .ELASDXMlxe img{
-                    width: 55px;
+                .atAQmFOtDW {
+                    font-size: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: #f1f1f1;
+                    .ELASDXMlxe{
+                        width: 55px;
+                        padding-left: 0;
+                        padding-right: 0;
+                        margin-right: 0 !important;
+                        margin-left: 0 !important;
+                        color: #fff;
+                        display: inline-block;
+                        border: 2px solid currentColor;
+                        background-color: transparent;
+                        line-height: 2.19em;
+                        border-radius: 999px !important;
+                        object-fit: cover;
+                        font-size: 1.5em;
+                        margin-bottom: 1em;
+                        img{
+                            width: 35px;
+                            transform: translateY(6px);
+                        }
+                        &:hover{
+                            background-color: #e32124;
+                            border: 2px solid #e32124;
+                        }
+                    }
                 }
             }
         }

@@ -27,7 +27,7 @@ export default function Policy() {
                     </div>
                     <div className="ezMLsDouur">
                         <h5>Mua 2 được giảm giá</h5>
-                        <h5>Chứng nhận chất lượng</h5>
+                        <h5>10% cho đơn hàng tiếp</h5>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ export default function Policy() {
                         <img src={policy4} alt='' />
                     </div>
                     <div className="ezMLsDouur">
-                        <h5>Hotline : <div className='eUkxgtadaP'>1900 636 648</div></h5>
+                        <h5>Hotline : <span className='eUkxgtadaP'>1900 636 648</span></h5>
                         <h5>Hỗ trợ tực tiếp nhanh chóng</h5>
                     </div>
                 </div>

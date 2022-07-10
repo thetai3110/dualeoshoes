@@ -1,10 +1,33 @@
-.JjvPrOKfJS{
+.JjvPrOKfJS {
     display: flex;
     flex-basis: 33.33%;
     max-width: 33.33%;
-    .kWQuzjEwDs{    
+    position: relative;
+    @media (max-width: 1200px) {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .QPSktAXiwL {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0 0 .3em;
+        left: 0;
+        top: 0;
+        color: #fff;
+        background-color: #000;
+        border-radius: 999px;
+        font-weight: bolder;
+        font-size: 1.3em;
+        height: 2.8em;
+        width: 2.8em;
+    }
+    .kWQuzjEwDs {
         padding: 0 15px 30px;
-        img{
+
+        img {
             width: 100%;
         }
     }

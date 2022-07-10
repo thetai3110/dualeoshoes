@@ -1,28 +1,30 @@
-.eUzKgZjUpU{
-    .KNxqRBUeOK{
+.eUzKgZjUpU {
+    .KNxqRBUeOK {
         padding: 50px 0 0 0 !important;
     }
     .DlstqYgvUK {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 0.3em 0 0.2em;
-        line-height: 1.6;
+        position: relative;
+        border-spacing: 5px;
+        margin: 0.3em auto 0.2em;
+        display: table;
+        table-layout: fixed;
+        width: 38% !important;
         span {
-            background: #e32124;
-            border-radius: 99px;
-            color: #fff;
-            padding: 8px 20px;
-            margin: 0 0.05em 0.2em;
+            background: #e32124 !important;
+            border-radius: 99px !important;
+            color: #fff !important;
+            padding: 8px;
+            display: table-cell;
             font-weight: bolder;
             text-align: center;
             line-height: 80%;
+            margin: 0 0.05em 0.2em;
             strong {
                 font-size: 30%;
                 opacity: .7;
                 text-transform: uppercase;
                 display: block;
+                font-weight: bolder;
             }
         }
     }

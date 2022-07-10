@@ -27,13 +27,15 @@ export function Product({ image, label, sale, oldPrice, curPrice, colors }: Item
                     </div>
                     <div className='albeCSDVsS'>
                         <div className='XXBFOLEOTd'>{label}</div>
-                        <div className='oSeDDXoauN'>{oldPrice && <del>{oldPrice}</del>} <ins>{curPrice}</ins></div>
-                        <div className='jadaCkzyvH'>
-                            {(colors || []).map((el, idx) => {
-                                return <div key={idx} className='DvBUPDqxun' style={{ backgroundColor: el }}>
-                                    <span className="NqUaeMLTuW">{el}</span>
-                                </div>
-                            })}
+                        <div className='hIvKYupObV'>
+                            <div className='oSeDDXoauN'>{oldPrice && <span className='QwGHQHriAp'>{oldPrice}</span>} <span className='JRfWXIIWiM'>{curPrice}</span></div>
+                            <div className='jadaCkzyvH'>
+                                {(colors || []).map((el, idx) => {
+                                    return <div key={idx} className='DvBUPDqxun' style={{ backgroundColor: el }}>
+                                        <div className="NqUaeMLTuW">{el}</div>
+                                    </div>
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +65,7 @@ export default function ListItem({ label, items, children }: ListItem) {
                         )
                     })}
                 </div>
-                <div style={{ paddingTop: '10px' }}></div>
+                <div style={{ paddingTop: '25px' }}></div>
                 <div className='pEiBNMftxz wZqhjjdIIW'>
                     <span>Xem tất cả</span>
                 </div>

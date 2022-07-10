@@ -1,4 +1,7 @@
 import React from 'react';
+import icSearch from '../../assets/images/Home/ic_search.svg';
+import icClose from '../../assets/images/Home/ic_close.svg';
+
 import './SearchBox.scss';
 
 interface Props {
@@ -9,7 +12,7 @@ export function SearchBox({ onClose }: Props) {
     const searchBoxRef = React.useRef<HTMLInputElement>(null);
 
     const handleClose = (e: any) => {
-        if(e.target !== searchBoxRef.current){
+        if (e.target !== searchBoxRef.current) {
             onClose()
         }
     }
@@ -17,8 +20,12 @@ export function SearchBox({ onClose }: Props) {
     return (
         <div className='VjFgZYSKee' onClick={(e) => handleClose(e)}>
             <div className='vaJmWfmWou'>
-                <input ref={searchBoxRef} type='search' placeholder='Tìm kiếm..' autoComplete='off' />
+                <input ref={searchBoxRef} type='text' placeholder='Tìm kiếm..' autoComplete='off' />
+                <div className="vaRCfAkLJK">
+                    <img src={icSearch} alt='' />
+                </div>
             </div>
+            <img src={icClose} alt='' className='PmyBloLBEF' onClick={(e) => handleClose(e)}/>
         </div>
     )
 }

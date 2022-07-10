@@ -44,7 +44,9 @@ export default function New() {
 
     return (
         <div className='MilyFxLPqI'>
-            <ListItem label='những sản phẩm mới nhất' items={[...products, ...products, ...products]} />
+            <ListItem label='những sản phẩm mới nhất' items={[...products, ...products, ...products]} >
+                <div style={{ height: 'auto', paddingTop: '10px' }}></div>
+            </ListItem>
         </div>
     )
 }

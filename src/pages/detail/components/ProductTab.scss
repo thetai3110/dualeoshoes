@@ -4,6 +4,9 @@
     .OUVCTptezU{
         display: flex;
         align-items: center;
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
         .WgEiSIYEMI{
             cursor: pointer;
             border: 1px solid #ddd;
@@ -15,6 +18,9 @@
             padding: 0.5em 2.75em;
             line-height: 2.5em;
             letter-spacing: .02em;
+            @media (max-width: 700px) {
+                width: 100%;
+            }
             &:hover{
                 opacity: .8;
                 background-color: #000;
@@ -30,6 +36,7 @@
         padding-top: 1em;
         .KoEhwPVRQM{
             display: none;
+            margin-bottom: 1em;
             .wIpHznnjhK{
                 display: flex;
                 border-bottom: 1px solid #ececec;
@@ -54,16 +61,25 @@
             }
             .AlPrOKHHpM{
                 .IiVUvqsTIE{
-                    padding: 0 15px 30px;
+                    padding: 0 15px 30px 0px;
                     .hHtjzVVAQm{
                         margin-bottom: 1.3em;
                     }
                 }
                 .vPUjoZxCjH{
-                    padding: 0 15px 30px;
+                    padding: 0 15px 30px 0px;
                     .uqSLWicrFA{
-                        border: 1px solid #e32124;
+                        border: 2px solid #e32124;
                         padding: 15px 30px 30px;
+                        h3{
+                            font-family: "Lora", sans-serif;
+                        }
+                        .eJGdJPTaKH{
+                            margin-bottom: .5em;
+                        }
+                        input{
+                            margin-bottom: 1em;
+                        }
                     }
                     .OlLvUOwTHn{
                         .MsfxKoZQMC {

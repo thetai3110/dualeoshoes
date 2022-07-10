@@ -1,8 +1,11 @@
 .rrLjRoGZLM {
     padding-left: 30px;
-    padding-right: 15px;
+    padding-right: 10px;
     flex-basis: 25%;
     max-width: 25%;
+    @media (max-width: 1200px) {
+        display: none;
+    }
     .dtznvYodyS {
         background-color: #fff;
         padding: 20px 0 0 0;
@@ -17,10 +20,12 @@
                 max-width: 100%;
                 border-bottom: 1px solid #eee;
                 padding: 15px 0;
+                align-items: center;
                 .YakgGGrAre{
                     padding: 0px;
-                    .UAVXgloAdy img{
+                    .UAVXgloAdy {
                         width: 45px;
+                        height: 100%;
                     }
                     .ezMLsDouur {
                         padding-left: 1em;
@@ -88,25 +93,18 @@
                         object-position: 50% 50%;
                     }
                 }
+                div{
+                    display: inline-block;
+                }
                 .uRqfQArYaM {
                     white-space: nowrap;
                     color: #000;
-                    font-size: .9;
                 }
-                .fowjMtzcrl{
-                    font-size: .75em;
-                    vertical-align: top;
-                    display: inline-block;
-                    margin-top: 0.05em;
-                }
-                .oscpWjCIxy .uRqfQArYaM{
+                .AnvRoGTgoT{
                     opacity: .6;
                     font-weight: normal;
                     margin-right: 0.3em;
                     text-decoration: line-through;
-                }
-                .CSyodjzixM .uRqfQArYaM{
-                    font-weight: bold;
                 }
             }
         }
