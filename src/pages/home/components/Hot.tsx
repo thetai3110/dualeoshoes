@@ -42,7 +42,7 @@ export default function Hot() {
         }
     ]
     return (
-        <div className='hot'>
+        <div className='uBIAnoprZh'>
             <ListItem label='top 10 sản phẩm hot tuần này' items={products} />
         </div>
     )

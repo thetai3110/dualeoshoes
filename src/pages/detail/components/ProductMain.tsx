@@ -6,8 +6,8 @@ import './ProductMain.scss';
 
 export default function ProductMain() {
     return (
-        <div className='product-main'>
-            <div className='container'>
+        <div className='PgKpOfrKCo'>
+            <div className='TlbZfgabaX'>
                 <ProductGallery />
                 <ProductDetail/>
                 <Sidebar />

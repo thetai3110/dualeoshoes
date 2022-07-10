@@ -56,9 +56,9 @@ export default function Header() {
     if (menu) {
       const sticky = menu.offsetTop;
       if (window.pageYOffset > sticky) {
-        menu.classList.add("sticky");
+        menu.classList.add("gpintFuWgT");
       } else {
-        menu.classList.remove("sticky");
+        menu.classList.remove("gpintFuWgT");
       }
     }
   }
@@ -71,58 +71,56 @@ export default function Header() {
   }, [])
 
   return (
-    <header className='header'>
-      <div className='top-bar-wrap'>
-        <div className='top-bar flex-row container'>
-          <p className='top-bar-address'><strong>HOME: </strong>319 - C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</p>
-          <a className="top-bar-login" href="/#" ><span>Đăng nhập</span></a>
+    <header className='hCdNSHZRTk'>
+      <div className='drHkFhMqpm'>
+        <div className='JvczItqJtI IduJqlyHst TlbZfgabaX'>
+          <div className='zqQSZmLQPg'><strong>HOME: </strong>319 - C16 Lý Thường Kiệt, P.15, Q.11, Tp.HCM</div>
+          <div className="nzwhZcvFWA"><span>Đăng nhập</span></div>
         </div>
       </div>
-      <div className='menu-wrap' ref={menuRef}>
-        <div className='menu flex-row container'>
-          <label htmlFor='ck-menu-left' className='menu-mobile-icon'><img src={icMenu} alt='' /></label>
-          <div className="menu-logo">
-            <a href='/#'><img src={logo} alt="Dua Leo Shoes" /></a>
+      <div className='BRTqaxuQEe' ref={menuRef}>
+        <div className='HYPKWLzIJG IduJqlyHst TlbZfgabaX'>
+          <label htmlFor='cOZVZoIPpb' className='LQXKHZoEqy'><img src={icMenu} alt='' /></label>
+          <div className="IUTWXeZBzv">
+            <div className='rWztelACQY'><img src={logo} alt="Dua Leo Shoes" /></div>
           </div>
-          <div className='menu-mobile-icon'>
-            <a href="/#" title="Giỏ hàng">
-              <img src={icCart} alt='' />
-            </a>
+          <div className='LQXKHZoEqy'>
+            <div className='rWztelACQY'><img src={icCart} alt='' /></div>
           </div>
-          <input type='checkbox' name='ck-menu-left' id='ck-menu-left'/>
-          <ul className="menu-left">
+          <input type='checkbox' name='cOZVZoIPpb' id='cOZVZoIPpb'/>
+          <div className="anpeTxxJqW">
             {menus.map((el, idx) => {
-              return <li key={idx} className={`menu-left-item ${active === idx ? 'active' : ''}`}>
-                <a href='/#' className='link'>
+              return <div key={idx} className={`YtDjSBWBqz ${active === idx ? 'LHdYzyimnC' : ''}`}>
+                <div className='QwXBYUflnN'>
                   <img src={el.image} alt={el.label} />
                   <span>{el.label}</span>
-                </a>
-                {el.children && <img className='menu-mobile-icon' onClick={() => handleClickItem(idx)} src={active === idx ? icUp : icDown} alt='' />}
+                </div>
+                {el.children && <img className='LQXKHZoEqy' onClick={() => handleClickItem(idx)} src={active === idx ? icUp : icDown} alt='' />}
                 {el.children &&
-                  <ul className='menu-child'>
+                  <div className='ESgyFRursg'>
                     {el.children.map((el, idx) => {
-                      return <li key={`menu-child-${idx}`} className="menu-child-item"><a href='/#' className='link'>{el.label}</a></li>
+                      return <div key={`ESgyFRursg-${idx}`} className="zalfuqROxR"><div className='QwXBYUflnN'>{el.label}</div></div>
                     })}
-                  </ul>}
-              </li>
+                  </div>}
+              </div>
             })}
-          </ul>
-          <label htmlFor='ck-menu-left' className='overlap'></label>
-          <label htmlFor='ck-menu-left' className='menu-close'>x</label>
-          <ul className="menu-right">
-            <li className='menu-right-divider'></li>
-            <li className='menu-right-search' onClick={handleSearch}>
-              <a href='/#'><img src={icSearch} alt='' /></a>
-            </li>
-            <li className='menu-right-divider'></li>
-            <li className='menu-right-cart'>
-              <a href="/#" title="Giỏ hàng">
+          </div>
+          <label htmlFor='cOZVZoIPpb' className='RBDSpJPOdl'></label>
+          <label htmlFor='cOZVZoIPpb' className='LzaQxriKwQ'>x</label>
+          <div className="VgtrukovQK">
+            <div className='pcvGDbNZiN'></div>
+            <div className='NsxKxwluwx' onClick={handleSearch}>
+              <div className='LGWTNhpqZl'><img src={icSearch} alt='' /></div>
+            </div>
+            <div className='pcvGDbNZiN'></div>
+            <div className='qMdxUAjtee'>
+              <div className='pQDTolpXBK'>
                 <span>Giỏ hàng</span>
                 <img src={icCart} alt='' />
-              </a>
-              <div className='notify'><p>Chưa có sản phẩm trong giỏ hàng.</p></div>
-            </li>
-          </ul>
+              </div>
+              <div className='fEHXKFuHKl'><div className='dkmMsfIvBq'>Chưa có sản phẩm trong giỏ hàng.</div></div>
+            </div>
+          </div>
         </div>
       </div>
       {isShowSearchBox && <SearchBox onClose={handleCloseSearchBox}/>}

@@ -1,90 +1,108 @@
-.product-tab{
+.BjiwvBwbMY {
     padding: 30px 0;
     border-top: 1px solid #ececec;
-    .tabs{
+    .OUVCTptezU{
         display: flex;
         align-items: center;
-        .tab-title{
+        .WgEiSIYEMI{
+            cursor: pointer;
             border: 1px solid #ddd;
             background-color: #eee;
             margin-right: 2px;
-            a{
-                display: inline-flex;
-                font-size: .8em;
-                text-transform: uppercase;
-                padding: 0.5em 2.75em;
-                line-height: 2.5em;
-                letter-spacing: .02em;
-                &:hover{
-                    color: #fff;
-                }
-            }
+            display: inline-flex;
+            font-size: .8em;
+            text-transform: uppercase;
+            padding: 0.5em 2.75em;
+            line-height: 2.5em;
+            letter-spacing: .02em;
             &:hover{
                 opacity: .8;
                 background-color: #000;
                 color: #fff;
             }
         }
-        .tab-title.active a{
+        .WgEiSIYEMI.MWfiRyTvxc{
             background-color: #000;
             color: #fff;
         }
     }
-    .tab-panels{
+    .FcfrJUvsja{
         padding-top: 1em;
-        .tab-content{
+        .KoEhwPVRQM{
             display: none;
-            .reviews{
-                .comments{
+            .wIpHznnjhK{
+                display: flex;
+                border-bottom: 1px solid #ececec;
+                line-height: 1.05;
+                letter-spacing: .05em;
+                padding: 0.5em;
+                align-items: center;
+                .SXZyMKGRGC{
+                    flex-basis: 40%;
+                    max-width: 40%;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: .9em;
+                }
+                .immUkzsadZ{
+                    color: #666;
+                    padding: 0.5em;
+                    text-align: left;
+                    line-height: 1.3;
+                    font-size: .9em;
+                }
+            }
+            .AlPrOKHHpM{
+                .IiVUvqsTIE{
                     padding: 0 15px 30px;
-                    p{
+                    .hHtjzVVAQm{
                         margin-bottom: 1.3em;
                     }
                 }
-                .review-form-wrap{
+                .vPUjoZxCjH{
                     padding: 0 15px 30px;
-                    .review-form{
+                    .uqSLWicrFA{
                         border: 1px solid #e32124;
                         padding: 15px 30px 30px;
                     }
-                    .review-form-rating{
-                        .stars {
+                    .OlLvUOwTHn{
+                        .MsfxKoZQMC {
                             margin-bottom: 0.5em;
-                            .ic-star{
-                                width: 16px;
-                            }
-                            a{
+                            .fsWmuHVTxO{
                                 display: inline-block;
+                                .YwJjDqcRuv{
+                                    width: 16px;
+                                }
                             }
-                            a + a{
+                            .fsWmuHVTxO + .fsWmuHVTxO{
                                 padding-left: .3em;
                                 margin-left: 0.3em;
                                 border-left: 1px solid #ececec;
                             }
                         }
                     }
-                    .review-form-author, .review-form-email{
+                    .dxbsuqebvu, .GIiytsJUSk{
                         display: inline-block;
                         width: 50%;
                         padding: 0 15px;
                         margin-bottom: 0.5em;
                     }
-                    .review-form-author{
+                    .dxbsuqebvu{
                         padding-left: 0;
                     }
-                    .review-form-email{
+                    .GIiytsJUSk{
                         padding-right: 0;
                     }
-                    .review-form-submit{
+                    .wlqWeiVFkk{
                         margin-bottom: 1.3em;
-                        .btn-submit{
+                        .IRupnxYoCn{
                             background-color: #e32124;
                         }
                     }
                 }
             }
         }
-        .tab-content.active{
+        .KoEhwPVRQM.MWfiRyTvxc{
             display: block;
         }
     }

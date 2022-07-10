@@ -15,7 +15,7 @@ interface Props {
 function NextArrow(props: Props) {
     const { onClick } = props;
     return (
-        <div className="slider-arrow slick-next" onClick={() => onClick()}>
+        <div className="CXvKRWhaHx slick-next" onClick={() => onClick()}>
             <img src={icNext} alt="" />
         </div>
     );
@@ -24,7 +24,7 @@ function NextArrow(props: Props) {
 function PreArrow(props: Props) {
     const { onClick } = props;
     return (
-        <div className="slider-arrow slick-prev" onClick={() => onClick()}>
+        <div className="CXvKRWhaHx slick-prev" onClick={() => onClick()}>
             <img src={icPre} alt="" />
         </div>
     );

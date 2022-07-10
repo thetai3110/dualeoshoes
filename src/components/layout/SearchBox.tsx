@@ -15,8 +15,8 @@ export function SearchBox({ onClose }: Props) {
     }
 
     return (
-        <div className='search-box-wrap' onClick={(e) => handleClose(e)}>
-            <div className='search-box'>
+        <div className='VjFgZYSKee' onClick={(e) => handleClose(e)}>
+            <div className='vaJmWfmWou'>
                 <input ref={searchBoxRef} type='search' placeholder='Tìm kiếm..' autoComplete='off' />
             </div>
         </div>

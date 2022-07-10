@@ -5,8 +5,8 @@ import './ProductFooter.scss';
 
 export default function ProductFooter() {
     return (
-        <div className='product-footer'>
-            <div className='container' style={{padding: '0 15px'}}>
+        <div className='QgkEDgIJDL'>
+            <div className='TlbZfgabaX' style={{padding: '0 15px'}}>
                 <ProductTab />
                 <ProductRelated />
             </div>

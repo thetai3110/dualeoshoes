@@ -10,20 +10,20 @@ export default function Banner() {
         slidesToScroll: 1,
     };
     return (
-        <div className="banner">
+        <div className="mVRCVburWF">
             <SliderCustom settings={settings}>
-                <div className="banner-bg1">
-                    <div className="banner-box">
-                        <h2 className="banner-box-title">mona <span>shoes</span></h2>
-                        <p className="banner-box-text">Cá tính hơn – Sành điệu hơn – Yêu đời hơn</p>
-                        <a className="banner-box-link" href="/#"><span>Xem ngay</span></a>
+                <div className="Lqljwgamrg">
+                    <div className="EiVSamPmXD">
+                        <h2 className="wOkPBbAYBn">mona <span>shoes</span></h2>
+                        <div className="aGnOSZKqfE">Cá tính hơn – Sành điệu hơn – Yêu đời hơn</div>
+                        <div className="eqJuoeFRqt"><span>Xem ngay</span></div>
                     </div>
                 </div>
-                <div className="banner-bg2">
-                    <div className="banner-box">
-                        <h2 className="banner-box-title">mona <span>shoes</span></h2>
-                        <p className="banner-box-text">Cá tính hơn – Sành điệu hơn – Yêu đời hơn</p>
-                        <a className="banner-box-link" href="/#"><span>Xem ngay</span></a>
+                <div className="VVizaVcQXW">
+                    <div className="EiVSamPmXD">
+                        <h2 className="wOkPBbAYBn">mona <span>shoes</span></h2>
+                        <div className="aGnOSZKqfE">Cá tính hơn – Sành điệu hơn – Yêu đời hơn</div>
+                        <div className="eqJuoeFRqt"><span>Xem ngay</span></div>
                     </div>
                 </div>
             </SliderCustom>

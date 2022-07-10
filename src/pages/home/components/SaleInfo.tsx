@@ -11,16 +11,16 @@ interface Props {
 // eslint-disable-next-line @typescript-eslint/no-redeclare 
 function Post({ image, label, date, desc }: Props) {
     return (
-        <div className='post-wrap'>
-            <div className='post'>
-                <div className='post-image'>
+        <div className='qkAssoEQJP'>
+            <div className='IjZOCtpZjH'>
+                <div className='TWWWJPDjuu'>
                     <img src={image} alt={label} />
                 </div>
-                <div className='post-info'>
-                    <h5 className='post-info-title'>{label}</h5>
-                    <div className='post-info-date'>{date}</div>
-                    <div className='post-info-divider'></div>
-                    <p className='post-info-desc'>{desc}</p>
+                <div className='EqWrwPoAUs'>
+                    <h5 className='wVaNnfMtrU'>{label}</h5>
+                    <div className='jpmwEVUjcr'>{date}</div>
+                    <div className='IuCdQzWKSZ'></div>
+                    <div className='pGSEIypcIK'>{desc}</div>
                 </div>
             </div>
         </div>
@@ -84,17 +84,17 @@ export default function SaleInfo() {
     };
 
     return (
-        <div className='sale-info'>
-            <div className='list-item container'>
-                <div className='heading-wrap flex-row'>
-                    <div className='heading'>
-                        <div className='heading-inner'>
-                            <h1 className='heading-label'>thông tin khuyến mãi</h1>
-                            <div className='heading-divider'></div>
+        <div className='KnXDKftujj'>
+            <div className='qFrOmPmAPB TlbZfgabaX'>
+                <div className='GMEliOrZJA IduJqlyHst'>
+                    <div className='zyfltpEFsT'>
+                        <div className='KNxqRBUeOK'>
+                            <h1 className='NZnEBNDEjt'>thông tin khuyến mãi</h1>
+                            <div className='WuQaTowAisr'></div>
                         </div>
                     </div>
                 </div>
-                <div className='list-area'>
+                <div className='ymFGhSoODA'>
                     <SliderCustom settings={settings}>
                         {[...posts, ...posts].map((el, idx) => {
                             return <Post key={idx} image={el.image} label={el.label} date={el.date} desc={el.desc} />

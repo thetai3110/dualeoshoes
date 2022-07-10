@@ -8,47 +8,47 @@ import './Policy.scss';
 export default function Policy() {
 
     return (
-        <div className="policy-wrap flex-row container">
-            <div className="policy">
-                <div className='policy-inner'>
-                    <div className="icon">
+        <div className="XSjSHEKvvK IduJqlyHst TlbZfgabaX">
+            <div className="MoYzeJfDbL">
+                <div className='YakgGGrAre'>
+                    <div className="UAVXgloAdy">
                         <img src={policy1} alt='' />
                     </div>
-                    <div className="text">
+                    <div className="ezMLsDouur">
                         <h5>Miễn phí vận chuyển</h5>
                         <h5>Cho đơn hàng &gt; 500.000đ</h5>
                     </div>
                 </div>
             </div>
-            <div className="policy">
-                <div className='policy-inner'>
-                    <div className="icon">
+            <div className="MoYzeJfDbL">
+                <div className='YakgGGrAre'>
+                    <div className="UAVXgloAdy">
                         <img src={policy2} alt='' />
                     </div>
-                    <div className="text">
+                    <div className="ezMLsDouur">
                         <h5>Mua 2 được giảm giá</h5>
                         <h5>Chứng nhận chất lượng</h5>
                     </div>
                 </div>
             </div>
-            <div className="policy">
-                <div className='policy-inner'>
-                    <div className="icon">
+            <div className="MoYzeJfDbL">
+                <div className='YakgGGrAre'>
+                    <div className="UAVXgloAdy">
                         <img src={policy3} alt='' />
                     </div>
-                    <div className="text">
+                    <div className="ezMLsDouur">
                         <h5>Chứng nhận chất lượng</h5>
                         <h5>Sản phẩm chất lượng</h5>
                     </div>
                 </div>
             </div>
-            <div className="policy">
-                <div className='policy-inner'>
-                    <div className="icon">
+            <div className="MoYzeJfDbL">
+                <div className='YakgGGrAre'>
+                    <div className="UAVXgloAdy">
                         <img src={policy4} alt='' />
                     </div>
-                    <div className="text">
-                        <h5>Hotline : <a href='/#' className='hotline'>1900 636 648</a></h5>
+                    <div className="ezMLsDouur">
+                        <h5>Hotline : <div className='eUkxgtadaP'>1900 636 648</div></h5>
                         <h5>Hỗ trợ tực tiếp nhanh chóng</h5>
                     </div>
                 </div>

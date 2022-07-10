@@ -4,12 +4,12 @@ import './Introduce.scss';
 
 export default function Introduce() {
     return (
-        <div className='introduce-wrap'>
-            <div className='introduce flex-row container'>
-                <div className='introduce-inner'>
-                    <h1 className='introduce-title'>Xem video giới thiệu về MONA <span>Shoes</span></h1>
-                    <div className='introduce-video'>
-                        <a href="https://www.youtube.com/watch?v=Xb9FXJy4SYU" className='introduce-video-link'>
+        <div className='OfeNcTkpVP'>
+            <div className='hrfBLAUcyF IduJqlyHst TlbZfgabaX'>
+                <div className='CzcQGWncKO'>
+                    <h1 className='iROmSoxAeJG'>Xem video giới thiệu về MONA <span>Shoes</span></h1>
+                    <div className='atAQmFOtDW'>
+                        <a href="https://www.youtube.com/watch?v=Xb9FXJy4SYU" className='ELASDXMlxe'>
                             <img src={icVideo} alt='' />
                         </a>
                     </div>

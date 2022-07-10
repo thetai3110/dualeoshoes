@@ -18,23 +18,23 @@ interface ListItem {
 // eslint-disable-next-line @typescript-eslint/no-redeclare 
 export function Product({ image, label, sale, oldPrice, curPrice, colors }: Item) {
     return (
-        <div className='item-wrap'>
-            <div className='item'>
-                {sale && <div className='item-badge'>{`${sale}%`}</div>}
-                <div className='item-content'>
-                    <div className='item-content-image'>
+        <div className='SfjdvLeEVc'>
+            <div className='lBAxYrpfjt'>
+                {sale && <div className='DnBoIJuupY'>{`${sale}%`}</div>}
+                <div className='NjOaAYokUY'>
+                    <div className='yuLyapYuml'>
                         <img src={image} alt={label} />
                     </div>
-                    <div className='item-content-info'>
-                        <div className='title'>{label}</div>
-                        <div className='price'>{oldPrice && <del>{oldPrice}</del>} <ins>{curPrice}</ins></div>
-                        <ul className='color'>
+                    <div className='albeCSDVsS'>
+                        <div className='XXBFOLEOTd'>{label}</div>
+                        <div className='oSeDDXoauN'>{oldPrice && <del>{oldPrice}</del>} <ins>{curPrice}</ins></div>
+                        <div className='jadaCkzyvH'>
                             {(colors || []).map((el, idx) => {
-                                return <li key={idx} className={`color-item ${el}`} style={{ backgroundColor: el }}>
-                                    <span className="tooltip">{el}</span>
-                                </li>
+                                return <div key={idx} className='DvBUPDqxun' style={{ backgroundColor: el }}>
+                                    <span className="NqUaeMLTuW">{el}</span>
+                                </div>
                             })}
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,18 +45,18 @@ export function Product({ image, label, sale, oldPrice, curPrice, colors }: Item
 // eslint-disable-next-line @typescript-eslint/no-redeclare 
 export default function ListItem({ label, items, children }: ListItem) {
     return (
-        <div className='list-item flex-col container'>
-            <div className='heading-wrap flex-row'>
-                <div className='heading'>
-                    <div className='heading-inner'>
-                        <h1 className='heading-label'>{label}</h1>
-                        <div className='heading-divider'></div>
+        <div className='qFrOmPmAPB cZStNOGTjf TlbZfgabaX'>
+            <div className='GMEliOrZJA IduJqlyHst'>
+                <div className='zyfltpEFsT'>
+                    <div className='KNxqRBUeOK'>
+                        <h1 className='NZnEBNDEjt'>{label}</h1>
+                        <div className='WuQaTowAis'></div>
                         {children}
                     </div>
                 </div>
             </div>
-            <div className='list-area flex-col'>
-                <div className='list'>
+            <div className='ymFGhSoODA cZStNOGTjf'>
+                <div className='MfnjEGvPmu'>
                     {items.map((el, idx) => {
                         return (
                             <Product key={idx} image={el.image} label={el.label} sale={el.sale} oldPrice={el.oldPrice} curPrice={el.curPrice} colors={el.colors} />
@@ -64,9 +64,9 @@ export default function ListItem({ label, items, children }: ListItem) {
                     })}
                 </div>
                 <div style={{ paddingTop: '10px' }}></div>
-                <a href="/#" className='btn btn-view-all'>
+                <div className='pEiBNMftxz wZqhjjdIIW'>
                     <span>Xem tất cả</span>
-                </a>
+                </div>
             </div>
         </div>
 
