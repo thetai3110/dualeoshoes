@@ -1,9 +1,13 @@
 .VjFgZYSKee{
     z-index: 1;
+    cursor: pointer;
     position: fixed;
     background-color: #333;
     inset: 0 0 0 0;
-    opacity: .5;
+    opacity: .6;
+    background: #0b0b0b;
+    transition: opacity .25s;
+    overflow: hidden;
     .PmyBloLBEF{
         z-index: 1001 !important;
         cursor: pointer;
@@ -27,7 +31,7 @@
         padding-right: 4px;
         margin: 0 auto;
         max-width: 600px;
-        color: #f1f1f1;
+        color: #ffff;
         input{
             font-family: 'Open Sans', sans-serif;
             z-index: 1001;
@@ -37,7 +41,7 @@
             padding: 0 0.75em;
             height: 2.507em;
             font-size: 26.9px;
-            color: currentColor !important;
+            color: #ffff !important;
             animation: displaySearchBox .2s;
             &::placeholder{
                 color: currentColor !important;

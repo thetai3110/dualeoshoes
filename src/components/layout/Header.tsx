@@ -6,19 +6,18 @@ import menuItem3 from '../../assets/images/Home/menu-item3.png';
 import menuItem4 from '../../assets/images/Home/menu-item4.png';
 import menuItem5 from '../../assets/images/Home/menu-item5.png';
 import menuItem6 from '../../assets/images/Home/menu-item6.png';
-import icSearch from '../../assets/images/Home/ic_search.svg';
 import icShopping from '../../assets/images/Home/ic_shopping.svg';
 import icMenu from '../../assets/images/Home/ic_menu.svg';
 import icClose from '../../assets/images/Home/ic_close.svg';
 import icDown from '../../assets/images/Home/ic_down.svg';
-import { SearchBox } from './SearchBox';
+import { SearchBox } from '../searchBox/SearchBox';
+import BackToTop from '../backToTop/BackToTop';
+import Cart from '../cart/Cart';
 
 import './Header.scss';
 
 export default function Header() {
   const [active, setActive] = React.useState(0);
-  const [isShowSearchBox, setShowSearchBox] = React.useState(false);
-  const [isShowCartPanel, setShowCartPanel] = React.useState(false);
   const [isShowMenuPanel, setShowMenuPanel] = React.useState(false);
   const menuRef = React.useRef<HTMLDivElement>(null);
   const menuMbRef = React.useRef<HTMLDivElement>(null);
@@ -45,25 +44,12 @@ export default function Header() {
     setActive(active === idx ? -1 : idx)
   }
 
-  const handleOpenSearchBox = () => {
-    setShowSearchBox(true);
-  }
-
-  const handleCloseSearchBox = () => {
-    setShowSearchBox(false);
-  }
-
-  const handleOpenCart = () => {
-    setShowCartPanel(true);
-  }
-
   const handleOpenMenu = () => {
     setShowMenuPanel(true);
   }
 
   const handleCloseMenu = () => {
     setShowMenuPanel(false);
-    setShowCartPanel(false);
   }
 
   const handleScroll = () => {
@@ -85,6 +71,18 @@ export default function Header() {
     }
   }, [])
 
+  React.useEffect(() => {
+    const body = document.querySelector('body');
+    if (!body) return;
+    if (isShowMenuPanel) {
+      body.style.overflow = "hidden";
+      body.style.marginRight = "17px";
+    } else {
+      body.style.overflow = "unset";
+      body.style.marginRight = "unset";
+    }
+  }, [isShowMenuPanel])
+
   return (
     <header className='hCdNSHZRTk'>
       <div className='drHkFhMqpm'>
@@ -101,18 +99,7 @@ export default function Header() {
           <div className="IUTWXeZBzv">
             <img src={logo} alt="Dua Leo Shoes" />
           </div>
-          <div className='LQXKHZoEqy' onClick={handleOpenCart}>
-            <img src={icShopping} alt='' />
-          </div>
-          {isShowCartPanel && <div className='qHSbPBzIjq'>
-            <div className='MvaqtyPOsz'>
-              <div className='jwenSjGihb'>
-                <h4 className='uRTtTXIzCl'>GIỎ HÀNG</h4>
-                <div className='OVPCXEkKoO'></div>
-              </div>
-              <div className='MllpaMxlUv'>Chưa có sản phẩm trong giỏ hàng.</div>
-            </div>
-          </div>}
+          <Cart />
           <div className={`anpeTxxJqW ${isShowMenuPanel ? 'JexEIXtxov' : ''}`}>
             {menus.map((el, idx) => {
               return <div key={idx} className={`YtDjSBWBqz ${active === idx ? 'LHdYzyimnC' : ''}`}>
@@ -130,17 +117,15 @@ export default function Header() {
               </div>
             })}
           </div>
-          {(isShowMenuPanel || isShowCartPanel) && <div className='RBDSpJPOdl' onClick={handleCloseMenu}></div>}
-          {(isShowMenuPanel || isShowCartPanel) && <div className='LzaQxriKwQ' onClick={handleCloseMenu}>
-            <img src={icClose} alt='' className={`GQDzUHyXlB ${isShowCartPanel ? 'aQCWApFChu' : ''}`} />
+          {isShowMenuPanel && <div className='RBDSpJPOdl' onClick={handleCloseMenu}></div>}
+          {isShowMenuPanel && <div className='LzaQxriKwQ' onClick={handleCloseMenu}>
+            <img src={icClose} alt='' className='GQDzUHyXlB' />
           </div>}
           <div className="VgtrukovQK">
-            <div className='pcvGDbNZiN'></div>
-            <div className='NsxKxwluwx' onClick={handleOpenSearchBox}>
-              <div className='LGWTNhpqZl'><img src={icSearch} alt='' /></div>
-            </div>
-            <div className='pcvGDbNZiN'></div>
-            <div className='qMdxUAjtee'>
+            <div className='THdIudfPKj pcvGDbNZiN'></div>
+            <SearchBox />
+            <div className='THdIudfPKj pcvGDbNZiN'></div>
+            <div className='THdIudfPKj qMdxUAjtee'>
               <div className='pQDTolpXBK'>
                 <span>Giỏ hàng</span>
                 <img src={icShopping} alt='' />
@@ -150,7 +135,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      {isShowSearchBox && <SearchBox onClose={handleCloseSearchBox} />}
+      <BackToTop />
     </header>
   )
 }

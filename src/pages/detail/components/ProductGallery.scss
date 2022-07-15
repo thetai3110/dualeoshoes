@@ -26,9 +26,104 @@
     }
     .kWQuzjEwDs {
         padding: 0 15px 30px;
-
         img {
             width: 100%;
         }
     }
+    .OLQXojnAZz{
+        position: absolute !important;
+        left: 0;
+        padding: 0 0 10px 10px;
+        @media (max-width: 700px) {
+            display: none;
+        }
+        .vCNTICcVMU{
+            cursor: pointer;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0.12em;
+            margin-right: 0.12em;
+            min-width: 2.5em;
+            border: 2px solid currentColor;
+            background-color: transparent;
+            line-height: 2.19em;
+            border-radius: 999px !important;
+            object-fit: cover;
+            color: silver;
+            text-align: center;
+            img{
+                width: 20px;
+                filter: brightness(0) invert(75%);
+                vertical-align: middle;
+                line-height: 1.2;
+                top: -1.5px;
+                position: relative;
+            }
+            &:hover{
+                border-color: #e32124;
+                background-color: #e32124;
+            }
+            &:hover img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .LzaQxriKwQ{
+        z-index: 1001 !important;
+        cursor: pointer;
+        position: fixed;
+        z-index: 100;
+        top: -5px;
+        right: 0;
+        .GQDzUHyXlB{
+            width: 40px;
+            height: 40px;
+            animation: closeIconAnimation .2s;
+            &:hover {
+                filter: brightness(0) invert(1);
+            }
+            &.aQCWApFChu{
+                &:hover{
+                    filter: brightness(0) !important;
+                }
+            }
+        }
+       
+    }
+    .UIHalZxcDB{
+        z-index: 1001;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 421px;
+        height: 421px;
+        animation: popupAnimation .2s;
+        img{
+            opacity: 1 !important;
+            background: linear-gradient(black, white);
+            cursor: zoom-in;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 1s;
+        }
+    }
+    .SzpQjRssxV{
+        z-index: 1001;
+        color: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+@keyframes popupAnimation {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
 }

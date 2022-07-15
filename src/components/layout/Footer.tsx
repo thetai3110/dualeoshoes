@@ -1,6 +1,6 @@
-import location from '../../assets/images/Home/ic_location.png';
-import mail from '../../assets/images/Home/ic_mail.png';
-import phone from '../../assets/images/Home/ic_phone.png';
+import location from '../../assets/images/Home/ic_location.svg';
+import mail from '../../assets/images/Home/ic_mail.svg';
+import phone from '../../assets/images/Home/ic_phone.svg';
 
 import './Footer.scss';
 
@@ -93,7 +93,9 @@ export default function Footer() {
                 <div className='fJdhvutuUF'>
                     <div className='mHOpmpxdoC'>
                         <h5 className='rXBRtnAddg'>kết nối với mona</h5>
-                        <iframe title="1" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthietkewebsitemonamedia%2F&tabs=timeline&width=280&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="180" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        <div className='QrOkRrzFIn'>
+                            <iframe title='fanpage' src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffb.com%2Fthietkewebsitemonamedia&amp;tabs=timeline&amp;width=280&amp;height=190&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="280" height="190" style={{ border: 'none', overflow: 'hidden' }} scrolling="no" frameBorder="0" allowTransparency allow="encrypted-media"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>

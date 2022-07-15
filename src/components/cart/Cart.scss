@@ -1,0 +1,40 @@
+.qHSbPBzIjq{
+    z-index: 1001;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    animation: cartAnimation .2s;
+    .MvaqtyPOsz{
+        padding: 30px;
+        .jwenSjGihb{
+            text-align: center;
+            text-transform: uppercase;
+            .uRTtTXIzCl{
+                font-family: "Lora", sans-serif;
+                line-height: 1.2;
+                text-transform: uppercase;
+                letter-spacing: .05em;
+                font-size: 1.125em;
+            }
+            .OVPCXEkKoO{
+                height: 3px;
+                display: block;
+                background-color: rgba(0,0,0,0.1);
+                margin: 1em auto 1em;
+                width: 100%;
+                max-width: 30px;
+            }
+        }
+        .MllpaMxlUv{
+            margin-bottom: 1.3em;
+        }
+    }
+    @media (max-width: 1200px) {
+        display: block !important;
+    }
+}

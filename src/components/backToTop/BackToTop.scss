@@ -1,0 +1,38 @@
+.fLQhqngIwv{
+    cursor: pointer;
+    opacity: 0;
+    margin-left: 0.12em;
+    margin-right: 0.12em;
+    min-width: 2.5em;
+    display: inline-block;
+    border: 2px solid currentColor;
+    background-color: transparent;
+    line-height: 2.19em;
+    color: currentColor;
+    border-radius: 100% !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    transform: translateY(30%);
+    transition: color .3s, opacity .3s, transform .3s;
+    &.IHlTiwtFLM{
+    opacity: 1;
+
+        transform: translateY(0);
+    }
+    .YdAQQzHFwK{
+        vertical-align: middle;
+        line-height: 1.2;
+        width: 18px;
+        top: -1.5px;
+        position: relative;
+    }
+    &:hover{
+        border-color: #e32124;
+        background-color: #e32124;
+    }
+    &:hover .YdAQQzHFwK{
+        filter: brightness(0) invert(1);
+    }
+}

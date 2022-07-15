@@ -1,11 +1,30 @@
+import React from 'react';
 import icPlay from '../../../assets/images/Home/ic_play.svg';
 
 import './Introduce.scss';
 
 export default function Introduce() {
+    const bgRef = React.useRef<HTMLDivElement>(null);
+    
+    const handleScroll = () => {
+        // transform: translate3d(0px, 179.34px, 0px);
+        const bg = bgRef.current;
+        console.log(bg?.getBoundingClientRect().top)
+        if(bg){
+            // bg.style.transform = `translate3d(0px, ${179}px, 0px)`
+        }
+    }
+
+    React.useEffect(()=>{
+        window.addEventListener('scroll', handleScroll);
+        return ()=>{
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, [])
+
     return (
         <div className='OfeNcTkpVP'>
-            <div className='TyHrUZtJJH'>
+            <div className='TyHrUZtJJH' ref={bgRef}>
                 <div className="jKuofsbLSd"></div>
             </div>
             <div className='SYKXMSMCip'>
