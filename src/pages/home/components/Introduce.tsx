@@ -5,13 +5,14 @@ import './Introduce.scss';
 
 export default function Introduce() {
     const bgRef = React.useRef<HTMLDivElement>(null);
+    const boxRef = React.useRef<HTMLDivElement>(null);
     
     const handleScroll = () => {
-        // transform: translate3d(0px, 179.34px, 0px);
         const bg = bgRef.current;
-        console.log(bg?.getBoundingClientRect().top)
-        if(bg){
-            // bg.style.transform = `translate3d(0px, ${179}px, 0px)`
+        const box = boxRef.current;
+        if(bg && boxRef){
+            const dist = -Number(box?.getBoundingClientRect().top || 0);
+            bg.style.transform = `translate3d(0px, ${dist}px, 0px)`;
         }
     }
 
@@ -27,7 +28,7 @@ export default function Introduce() {
             <div className='TyHrUZtJJH' ref={bgRef}>
                 <div className="jKuofsbLSd"></div>
             </div>
-            <div className='SYKXMSMCip'>
+            <div className='SYKXMSMCip' ref={boxRef}>
                 <div className='IduJqlyHst TlbZfgabaX'>
                     <div className='hrfBLAUcyF'>
                         <div className='CzcQGWncKO'>

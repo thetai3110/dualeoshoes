@@ -9,9 +9,8 @@
     flex-flow: row;
     align-items: center;
     .TyHrUZtJJH{
-        height: 556px;
+        height: 100vh;
         width: 100%;
-        // transform: translate3d(0px, -320.66px, 0px);
         backface-visibility: hidden;
         background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/sec_video_image.jpg);
         overflow: hidden;
@@ -19,12 +18,20 @@
         background-repeat: no-repeat !important;
         background-position: 50% 50%;
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        inset: 0 0 0 0;
         padding: 0 !important;
         margin: 0 !important;
+        .jKuofsbLSd{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.2);
+            top: 0;
+            left: 0;
+            height: 100%;
+            right: 0;
+            bottom: 0;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
     }
     .SYKXMSMCip{
         position: relative !important;
