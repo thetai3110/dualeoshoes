@@ -8,6 +8,9 @@
     display: flex;
     flex-flow: row;
     align-items: center;
+    @media (max-width: 700px) {
+        height: 311px;
+    }
     .TyHrUZtJJH{
         position: absolute;
         inset: 0 0 0 0;

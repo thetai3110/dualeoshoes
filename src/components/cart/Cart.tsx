@@ -20,10 +20,8 @@ export default function Cart() {
         if (!body) return;
         if (isShowCartPanel) {
             body.style.overflow = "hidden";
-            body.style.marginRight = "17px";
         } else {
             body.style.overflow = "unset";
-            body.style.marginRight = "unset";
         }
     }, [isShowCartPanel])
 

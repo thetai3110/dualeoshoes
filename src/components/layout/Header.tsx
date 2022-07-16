@@ -76,10 +76,8 @@ export default function Header() {
     if (!body) return;
     if (isShowMenuPanel) {
       body.style.overflow = "hidden";
-      body.style.marginRight = "17px";
     } else {
       body.style.overflow = "unset";
-      body.style.marginRight = "unset";
     }
   }, [isShowMenuPanel])
 

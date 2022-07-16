@@ -38,7 +38,7 @@ export default function ProductTab() {
                     </div>
                     <div className="wIpHznnjhK">
                         <div className="SXZyMKGRGC">Màu sắc</div>
-                        <div className="immUkzsadZ">Đen, Trắng, Vàng</div>
+                        <div className="immUkzsadZ">Đen, Đỏ, Nâu</div>
                     </div>
                 </div>
                 <div className={`KoEhwPVRQM ${activeTab === TAB_TITLE.REVIEW ? 'MWfiRyTvxc' : ''}`}>
@@ -48,35 +48,37 @@ export default function ProductTab() {
                             <div className='hHtjzVVAQm'>Chưa có đánh giá nào.</div>
                         </div>
                         <div className='vPUjoZxCjH'>
-                            <div className='uqSLWicrFA'>
-                                <h3>Hãy là người đầu tiên nhận xét “Giày búp bê xu hướng oxford mũi nhọn”</h3>
-                                <form>
-                                    <div className="OlLvUOwTHn">
-                                        <label htmlFor="PYritpBTxy">Đánh giá của bạn</label>
-                                        <div className="MsfxKoZQMC">
-                                            <div className='fsWmuHVTxO'>{[1].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
-                                            <div className='fsWmuHVTxO'>{[1, 2].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
-                                            <div className='fsWmuHVTxO'>{[1, 2, 3].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
-                                            <div className='fsWmuHVTxO'>{[1, 2, 3, 4].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
-                                            <div className='fsWmuHVTxO'>{[1, 2, 3, 4, 5].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
+                            <div className='eNQlEigFBO'>
+                                <div className='uqSLWicrFA'>
+                                    <h3>Hãy là người đầu tiên nhận xét “Giày cao gót Midnight Black Kenneson 01”</h3>
+                                    <form>
+                                        <div className="OlLvUOwTHn">
+                                            <label htmlFor="PYritpBTxy">Đánh giá của bạn</label>
+                                            <div className="MsfxKoZQMC">
+                                                <div className='fsWmuHVTxO'>{[1].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
+                                                <div className='fsWmuHVTxO'>{[1, 2].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
+                                                <div className='fsWmuHVTxO'>{[1, 2, 3].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
+                                                <div className='fsWmuHVTxO'>{[1, 2, 3, 4].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
+                                                <div className='fsWmuHVTxO'>{[1, 2, 3, 4, 5].map((el, idx) => { return <img key={idx} className='YwJjDqcRuv' src={icStar} alt="" /> })}</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="eJGdJPTaKH">
-                                        <label htmlFor="JoUvnNuTAO">Nhận xét của bạn *</label>
-                                        <textarea id='JoUvnNuTAO' name='JoUvnNuTAO' cols={45} rows={8} required />
-                                    </div>
-                                    <div className="dxbsuqebvu">
-                                        <label htmlFor="uBnLFKTKsN">Tên *</label>
-                                        <input id="uBnLFKTKsN" name="uBnLFKTKsN" type="text" value="" size={30} required />
-                                    </div>
-                                    <div className="GIiytsJUSk">
-                                        <label htmlFor="VjjVyfpsQa">Email *</label>
-                                        <input id="VjjVyfpsQa" name="VjjVyfpsQa" type="text" value="" size={30} required />
-                                    </div>
-                                    <div className="wlqWeiVFkk">
-                                        <input name="xVMBUeoivh" type="submit" id="xVMBUeoivh" className="pEiBNMftxz IRupnxYoCn" value="Gửi đi" />
-                                    </div>
-                                </form>
+                                        <div className="eJGdJPTaKH">
+                                            <label htmlFor="JoUvnNuTAO">Nhận xét của bạn *</label>
+                                            <textarea id='JoUvnNuTAO' name='JoUvnNuTAO' cols={45} rows={8} required />
+                                        </div>
+                                        <div className="dxbsuqebvu">
+                                            <label htmlFor="uBnLFKTKsN">Tên *</label>
+                                            <input id="uBnLFKTKsN" name="uBnLFKTKsN" type="text" value="" size={30} required />
+                                        </div>
+                                        <div className="GIiytsJUSk">
+                                            <label htmlFor="VjjVyfpsQa">Email *</label>
+                                            <input id="VjjVyfpsQa" name="VjjVyfpsQa" type="text" value="" size={30} required />
+                                        </div>
+                                        <div className="wlqWeiVFkk">
+                                            <input name="xVMBUeoivh" type="submit" id="xVMBUeoivh" className="pEiBNMftxz IRupnxYoCn" value="Gửi đi" />
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

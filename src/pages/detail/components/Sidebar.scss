@@ -11,26 +11,38 @@
         padding: 20px 0 0 0;
         margin-bottom: 1.5em;
         border: 1px solid #eee;
-        .XSjSHEKvvK {
+        .KKUFoEEFel {
+            display: flex;
             flex-direction: column;
             padding-left: 30px;
             padding-right: 30px;
-            .MoYzeJfDbL {
+            .wQefmMiTFV {
                 flex-basis: 100%;
                 max-width: 100%;
                 border-bottom: 1px solid #eee;
                 padding: 15px 0;
-                align-items: center;
-                .YakgGGrAre{
-                    padding: 0px;
-                    .UAVXgloAdy {
+                .vGqVzkgpTi{
+                    display: flex;
+                    flex-flow: row wrap;
+                    text-align: left;
+                    font-size: .8em;
+                    .zLsfIMQOzm {
                         width: 45px;
-                        height: 100%;
                         padding-top: 0.2em;
+                        flex: 0 0 auto;
+                        display: block;
                     }
-                    .ezMLsDouur {
+                    .puBgqjEAjz {
                         padding-left: 1em;
-                        font-size: .8em;
+                        flex: 1 1 0px;
+                        h5{
+                            font-family: "Lora", sans-serif;
+                            font-size: 12.8px;
+                        }
+                        h5:last-child{
+                            font-weight: 300 !important;
+                            margin-bottom: unset;
+                        }
                     }
                 }
             }
@@ -100,11 +112,12 @@
                 .uRqfQArYaM {
                     white-space: nowrap;
                     color: #000;
+                    line-height: 1.33;
                 }
                 .AnvRoGTgoT{
                     opacity: .6;
                     font-weight: normal;
-                    margin-right: 0.3em;
+                    margin-right: 0.5em;
                     text-decoration: line-through;
                 }
             }

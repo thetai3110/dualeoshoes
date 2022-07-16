@@ -26,7 +26,7 @@ export default function ProductRelated() {
             colors: ['black', 'red', 'gray']
         },
         {
-            image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-ralidien-65-rg-6bd5e8ac14064de5894325a665997e71.jpg',
+            image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/giay-saint-laurent-1-img1-300x341.jpg',
             label: 'Giày cao gót Heels Ralidien',
             sale: 20,
             oldPrice: '700,000₫',
@@ -34,11 +34,11 @@ export default function ProductRelated() {
             colors: ['black', 'gray', 'pink']
         },
         {
-            image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/xam-2-86c62056-d94f-4d6b-42ee-8693e7de353c-1.jpg',
-            label: 'Giày búp bê mũi nhọn đính nơ thanh lịch',
+            image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/giay-saint-laurent-1-img1-300x341.jpg',
+            label: 'Giày Saint Laurent',
             sale: 11,
-            oldPrice: '350,000₫',
-            curPrice: '295,000₫',
+            oldPrice: '1,000,000₫',
+            curPrice: '850,000₫',
             colors: ['black', 'pink', 'gray']
         }
     ]
@@ -79,7 +79,7 @@ export default function ProductRelated() {
     return (
         <div className='pVbvpUFUGI'>
             <div className='qFrOmPmAPB TlbZfgabaX'>
-                <h3 className='vjRIqYnoPt'>sản phẩm tương tự</h3>
+                <h3 className='vjRIqYnoPt'>SẢN PHẨM TƯƠNG TỰ</h3>
                 <div className='ymFGhSoODA'>
                     <SliderCustom settings={settings}>
                         {[...products, ...products].map((el, idx) => {

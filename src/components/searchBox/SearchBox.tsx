@@ -23,10 +23,8 @@ export function SearchBox() {
         if (!body) return;
         if (isShowSearchBox) {
             body.style.overflow = "hidden";
-            body.style.marginRight = "17px";
         } else {
             body.style.overflow = "unset";
-            body.style.marginRight = "unset";
         }
     }, [isShowSearchBox])
 

@@ -29,35 +29,40 @@ export default function ProductGallery() {
     return (
         <div className='JjvPrOKfJS'>
             <div className='QPSktAXiwL'>-30%</div>
-            <div className='kWQuzjEwDs' onClick={handleOpenPopup}>
-                <ReactImageMagnify {...{
-                    enlargedImagePosition: 'over',
-                    smallImage: {
-                        alt: 'Wristwatch by Ted Baker London',
-                        isFluidWidth: true,
-                        src: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-kenneson-65-rg.jpg'
-                    },
-                    largeImage: {
-                        src: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-kenneson-65-rg.jpg',
-                        width: 1000,
-                        height: 1500
-                    }
-                }} />
-                <div className='OLQXojnAZz'>
-                    <div className='vCNTICcVMU' onClick={handleOpenPopup}>
-                        <img src={icExpand} alt='' />
+            <div className='kWQuzjEwDs'>
+                <div className='jQxhGXntlh' onClick={handleOpenPopup}>
+                    <ReactImageMagnify {...{
+                        enlargedImagePosition: 'over',
+                        smallImage: {
+                            alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-kenneson-65-rg.jpg'
+                        },
+                        largeImage: {
+                            src: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-kenneson-65-rg.jpg',
+                            width: 1000,
+                            height: 1500
+                        }
+                    }} />
+                    <div className='OLQXojnAZz'>
+                        <div className='vCNTICcVMU' onClick={handleOpenPopup}>
+                            <img src={icExpand} alt='' />
+                        </div>
                     </div>
                 </div>
             </div>
             {isShowPopup &&
-                <div className='UIHalZxcDB'>
-                    <img ref={imgRef} src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-kenneson-65-rg.jpg" alt='' onClick={handleZoom} />
-                </div>}
-            {isShowPopup && <div className='SzpQjRssxV'>do-01-kenneson-65-rg</div>}    
-            {isShowPopup && <div className='RBDSpJPOdl' onClick={handleClosePopup}></div>}
-            {isShowPopup && <div className='LzaQxriKwQ' onClick={handleClosePopup}>
-                <img src={icClose} alt='' className='GQDzUHyXlB' />
-            </div>}
+                <>
+                    <div className='UIHalZxcDB'>
+                        <img ref={imgRef} src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-kenneson-65-rg.jpg" alt='' onClick={handleZoom} />
+                    </div>
+                    <div className='SzpQjRssxV'>do-01-kenneson-65-rg</div>
+                    <div className='oMCJlWwgmS' onClick={handleClosePopup}></div>
+                    <div className='LzaQxriKwQ' onClick={handleClosePopup}>
+                        <img src={icClose} alt='' className='GQDzUHyXlB' />
+                    </div>
+                </>
+            }
         </div>
     )
 }

@@ -30,17 +30,27 @@ export default function ProductDetail() {
             </div>
             <div className='YHBRYIdvCS'>{detail.desc}</div>
             <div className='ZmrSsWBUxt'>
-                <div className='ZvxOnaABoO'>
-                    <div className='SZajlHSbZb'>Size</div>
-                    {detail.sizes.map((size, idx) => {
-                        return <div key={`bNFTlhgoza-${idx}`} className='bNFTlhgoza'><span>{size}</span></div>
-                    })}
-                </div>
-                <div className='ZvxOnaABoO'>
-                    <div className='SZajlHSbZb'>Màu sắc</div>
-                    {detail.colors.map((color, idx) => {
-                        return <div key={`bNFTlhgoza-${idx}`} className='bNFTlhgoza'><span style={{ backgroundColor: color.en }}></span></div>
-                    })}
+                <div className='SwcCMXEqDD'>
+                    <div className='ZvxOnaABoO'>
+                        <div className='SZajlHSbZb'><div className='sRJqTzEkTS'>Size</div></div>
+                        <div className='vXbxErqyvq'>
+                            <div className='ftuliUqUeO'>
+                                {detail.sizes.map((size, idx) => {
+                                    return <div key={`bNFTlhgoza-${idx}`} className='bNFTlhgoza'><span>{size}</span></div>
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                    <div className='ZvxOnaABoO'>
+                        <div className='SZajlHSbZb'><div className='sRJqTzEkTS'>Màu sắc</div></div>
+                        <div className='vXbxErqyvq ArfaRjFpZS'>
+                            <div className='ftuliUqUeO'>
+                                {detail.colors.map((color, idx) => {
+                                    return <div key={`bNFTlhgoza-${idx}`} className='bNFTlhgoza'><span style={{ backgroundColor: color.en }}></span></div>
+                                })}
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='ohpLRlpXXt'>
                     <div className='jJeKJaOxQo'>

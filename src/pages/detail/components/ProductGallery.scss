@@ -26,21 +26,23 @@
     }
     .kWQuzjEwDs {
         padding: 0 15px 30px;
-        img {
-            width: 100%;
+        .jQxhGXntlh{
+            position: relative;
+            img {
+                width: 100%;
+            }
         }
     }
     .OLQXojnAZz{
         position: absolute !important;
         left: 0;
+        bottom: 0;
         padding: 0 0 10px 10px;
         @media (max-width: 700px) {
             display: none;
         }
         .vCNTICcVMU{
             cursor: pointer;
-            padding-left: 0;
-            padding-right: 0;
             margin-left: 0.12em;
             margin-right: 0.12em;
             min-width: 2.5em;
@@ -52,7 +54,7 @@
             color: silver;
             text-align: center;
             img{
-                width: 20px;
+                width: 18px;
                 filter: brightness(0) invert(75%);
                 vertical-align: middle;
                 line-height: 1.2;
@@ -125,6 +127,16 @@
         line-height: 44px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.3);
+    }
+    .oMCJlWwgmS{
+        position: fixed;
+        inset: 0 0 0 0;
+        z-index: 1000;
+        opacity: 0.6;
+        background: #0b0b0b;
+        transition: opacity .25s;
+        overflow: hidden;
+        cursor: pointer;
     }
 }
 @keyframes popupAnimation {
