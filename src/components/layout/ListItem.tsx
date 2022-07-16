@@ -20,7 +20,7 @@ export function Product({ image, label, sale, oldPrice, curPrice, colors }: Item
     return (
         <div className='SfjdvLeEVc'>
             <div className='lBAxYrpfjt'>
-                {sale && <div className='DnBoIJuupY'>{`${sale}%`}</div>}
+                {sale && <div className='DnBoIJuupY'>{`${-sale}%`}</div>}
                 <div className='NjOaAYokUY'>
                     <div className='yuLyapYuml'>
                         <img src={image} alt={label} />
@@ -29,13 +29,13 @@ export function Product({ image, label, sale, oldPrice, curPrice, colors }: Item
                         <div className='XXBFOLEOTd'>{label}</div>
                         <div className='hIvKYupObV'>
                             <div className='oSeDDXoauN'>{oldPrice && <span className='QwGHQHriAp'>{oldPrice}</span>} <span className='JRfWXIIWiM'>{curPrice}</span></div>
-                            <div className='jadaCkzyvH'>
+                            <ul className='jadaCkzyvH'>
                                 {(colors || []).map((el, idx) => {
-                                    return <div key={idx} className='DvBUPDqxun' style={{ backgroundColor: el }}>
+                                    return <li key={idx} className='DvBUPDqxun' style={{ backgroundColor: el }}>
                                         <div className="NqUaeMLTuW">{el}</div>
-                                    </div>
+                                    </li>
                                 })}
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>

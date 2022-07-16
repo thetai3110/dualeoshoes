@@ -62,12 +62,8 @@
     }
 }
 @keyframes displaySearchBox {
-    from{
-        transform: translateY(-50px);
-    }
-    to{
-        transform: translateY(0);
-    }
+    from{ transform: translateY(-50px);}
+    to{ transform: translateY(0);}
 }
 @keyframes closeIconAnimation {
     from {transform: translateY(30px);}

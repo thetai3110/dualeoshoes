@@ -28,7 +28,7 @@ export default function Sale() {
         {
             image: 'http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/do-01-ralidien-65-rg-6bd5e8ac14064de5894325a665997e71.jpg',
             label: 'Giày cao gót Heels Ralidien',
-            sale: 20,
+            sale: 15,
             oldPrice: '700,000₫',
             curPrice: '550,000₫',
             colors: ['black', 'gray', 'pink']

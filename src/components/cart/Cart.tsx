@@ -26,25 +26,29 @@ export default function Cart() {
             body.style.marginRight = "unset";
         }
     }, [isShowCartPanel])
-      
+
     return (
         <>
-            <div className='LQXKHZoEqy' onClick={handleOpenCart}>
-                <img src={icShopping} alt='' />
+            <div className='jbEUYkupBc' onClick={handleOpenCart}>
+                <img className='RrDLiBjSbx' src={icShopping} alt='' />
             </div>
-            {isShowCartPanel && <div className='qHSbPBzIjq'>
-                <div className='MvaqtyPOsz'>
-                    <div className='jwenSjGihb'>
-                        <h4 className='uRTtTXIzCl'>GIỎ HÀNG</h4>
-                        <div className='OVPCXEkKoO'></div>
+            {isShowCartPanel &&
+                <div className='bGaBlEXiAu'>
+                    <div className='qHSbPBzIjq'>
+                        <div className='MvaqtyPOsz'>
+                            <div className='jwenSjGihb'>
+                                <h4 className='uRTtTXIzCl'>GIỎ HÀNG</h4>
+                                <div className='OVPCXEkKoO'></div>
+                            </div>
+                            <div className='MllpaMxlUv'>Chưa có sản phẩm trong giỏ hàng.</div>
+                        </div>
                     </div>
-                    <div className='MllpaMxlUv'>Chưa có sản phẩm trong giỏ hàng.</div>
+                    <div className='zIxhBGnKCW' onClick={handleCloseMenu} />
+                    <div className='nLbOqCsOnd' onClick={handleCloseMenu}>
+                        <img src={icClose} alt='' className='LzEmxkKLSb' />
+                    </div>
                 </div>
-            </div>}
-            {isShowCartPanel && <div className='RBDSpJPOdl' onClick={handleCloseMenu}></div>}
-            {isShowCartPanel && <div className='LzaQxriKwQ' onClick={handleCloseMenu}>
-            <img src={icClose} alt='' className='GQDzUHyXlB aQCWApFChu' />
-          </div>}
+            }
         </>
     )
 }

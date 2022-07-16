@@ -1,24 +1,23 @@
 .fLQhqngIwv{
     cursor: pointer;
-    opacity: 0;
+    display: inline-block;
+    min-width: 2.5em;
     margin-left: 0.12em;
     margin-right: 0.12em;
-    min-width: 2.5em;
-    display: inline-block;
-    border: 2px solid currentColor;
-    background-color: transparent;
     line-height: 2.19em;
-    color: currentColor;
-    border-radius: 100% !important;
+    text-align: center;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    text-align: center;
+    border: 2px solid currentColor;
+    background-color: transparent;
+    border-radius: 100% !important;
+    color: currentColor;
+    opacity: 0;
     transform: translateY(30%);
     transition: color .3s, opacity .3s, transform .3s;
     &.IHlTiwtFLM{
-    opacity: 1;
-
+        opacity: 1;
         transform: translateY(0);
     }
     .YdAQQzHFwK{

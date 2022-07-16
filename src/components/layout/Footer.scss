@@ -11,10 +11,11 @@
             justify-content: center;
             font-size: .9em;
             padding: 0 15px;
+            margin-top: -3px;
             .StIePocWXN{
+                display: inline-block;
                 max-width: 100%;
                 height: auto;
-                display: inline-block;
                 width: 20px;
                 vertical-align: sub;
                 margin: 0 3px;
@@ -42,8 +43,8 @@
                     margin: 0 auto;
                     overflow: hidden;
                     display: block;
-                    font-size: 0.02px;
                     img {
+                        display: block;
                         width: 100%;
                     }
                 }
@@ -52,7 +53,7 @@
                     padding-bottom: 1.4em;
                     position: relative;
                     width: 100%;
-                    font-size: .9em;
+                    font-size: 13.5px;
                 }
             }
         }

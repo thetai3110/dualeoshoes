@@ -9,18 +9,14 @@
     flex-flow: row;
     align-items: center;
     .TyHrUZtJJH{
+        position: absolute;
+        inset: 0 0 0 0;
         height: 100vh;
-        width: 100%;
-        backface-visibility: hidden;
         background-image: url(http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/sec_video_image.jpg);
-        overflow: hidden;
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background-position: 50% 50%;
-        position: absolute;
-        inset: 0 0 0 0;
-        padding: 0 !important;
-        margin: 0 !important;
+        overflow: hidden;
         .jKuofsbLSd{
             position: absolute;
             background-color: rgba(0, 0, 0, 0.2);
@@ -29,22 +25,17 @@
             height: 100%;
             right: 0;
             bottom: 0;
-            padding: 0 !important;
-            margin: 0 !important;
         }
     }
     .SYKXMSMCip{
+        z-index: 1;
         position: relative !important;
         width: 100%;
-        z-index: 1;
         .hrfBLAUcyF {
+            position: relative;
             max-width: 100%;
             flex-basis: 100%;
             padding: 0 15px 30px;
-            position: relative;
-            margin: 0;
-            padding: 0 15px 30px;
-            width: 100%;
             .CzcQGWncKO {
                 padding: 200px 0px 160px 0px;
                 margin-left: auto;
@@ -63,22 +54,15 @@
                 }
                 .atAQmFOtDW {
                     font-size: 90%;
-                    margin-left: auto;
-                    margin-right: auto;
                     color: #f1f1f1;
                     .ELASDXMlxe{
-                        width: 55px;
-                        padding-left: 0;
-                        padding-right: 0;
-                        margin-right: 0 !important;
-                        margin-left: 0 !important;
-                        color: #fff;
                         display: inline-block;
+                        width: 55px;
+                        color: #fff;
                         border: 2px solid currentColor;
                         background-color: transparent;
-                        line-height: 2.19em;
                         border-radius: 999px !important;
-                        object-fit: cover;
+                        line-height: 2.19em;
                         font-size: 1.5em;
                         margin-bottom: 1em;
                         img{

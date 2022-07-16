@@ -94,7 +94,6 @@ export default function SaleInfo() {
                         </div>
                     </div>
                 </div>
-                <div style={{ height: 'auto', paddingTop: '10px' }}></div>
                 <div className='ymFGhSoODA'>
                     <div className='vssWVIKAyL'>
                         <SliderCustom settings={settings}>

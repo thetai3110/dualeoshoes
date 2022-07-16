@@ -43,8 +43,8 @@ export default function Hot() {
     ]
     return (
         <div className='uBIAnoprZh'>
-            <ListItem label='top 10 sản phẩm hot tuần này' items={products} >
-                <div style={{ height: 'auto', paddingTop: '10px' }}></div>
+             <ListItem label='TOP 10 SẢN PHẨM HOT TUẦN NÀY' items={products} >
+                <div style={{ height: 'auto', paddingTop: '10px' }} />
             </ListItem>
         </div>
     )

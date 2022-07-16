@@ -38,6 +38,7 @@
             border-radius: 50%;
             height: 2.8em;
             width: 2.8em;
+            font-weight: bolder;
         }
         .NjOaAYokUY {
             .yuLyapYuml {
@@ -101,18 +102,23 @@
                     }
                 }
                 .jadaCkzyvH {
+                    display: block;
                     font-size: .9em;
                     .DvBUPDqxun + .DvBUPDqxun {
                         margin-left: .2em;
                     }
                     .DvBUPDqxun {
+                        margin: 0;
+                        display: inline-block;
+                        font-weight: bold;
+                        font-size: .9em;
+                        margin-bottom: 0.4em;
+                        position: relative;
                         cursor: pointer;
                         width: 20px;
                         height: 20px;
                         border-radius: 20px;
-                        display: inline-block;
-                        position: relative;
-                        margin-bottom: .4em;
+                        border: 2px solid transparent;
                         &:hover .NqUaeMLTuW {
                             visibility: visible;
                         }
@@ -127,7 +133,7 @@
         font-family: 'Lora', sans-serif;
         max-width: 41.66667%;
         flex-basis: 41.66667%;
-        padding: 0 15px 30px;
+        padding: 0 15px 29px;
         justify-content: center;
         .zyfltpEFsT {
             text-align: center;
