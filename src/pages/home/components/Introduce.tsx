@@ -1,5 +1,5 @@
 import React from 'react';
-import icPlay from '../../../assets/images/Home/ic_play.svg';
+import icPlay from '../../../assets/images/ic_play.svg';
 
 import './Introduce.scss';
 

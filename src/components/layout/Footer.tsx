@@ -1,6 +1,6 @@
-import location from '../../assets/images/Home/ic_location.svg';
-import mail from '../../assets/images/Home/ic_mail.svg';
-import phone from '../../assets/images/Home/ic_phone.svg';
+import location from '../../assets/images/ic_location.svg';
+import mail from '../../assets/images/ic_mail.svg';
+import phone from '../../assets/images/ic_phone.svg';
 
 import './Footer.scss';
 import FooterGallery from './FooterGallery';

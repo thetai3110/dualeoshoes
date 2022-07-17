@@ -1,6 +1,6 @@
 import React from 'react';
-import icSearch from '../../assets/images/Home/ic_search.svg';
-import icClose from '../../assets/images/Home/ic_close.svg';
+import icSearch from '../../assets/images/ic_search.svg';
+import icClose from '../../assets/images/ic_close.svg';
 
 import './SearchBox.scss';
 

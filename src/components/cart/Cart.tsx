@@ -1,6 +1,6 @@
 import React from 'react';
-import icShopping from '../../assets/images/Home/ic_shopping.svg';
-import icClose from '../../assets/images/Home/ic_close.svg';
+import icShopping from '../../assets/images/ic_shopping.svg';
+import icClose from '../../assets/images/ic_close.svg';
 
 import './Cart.scss';
 

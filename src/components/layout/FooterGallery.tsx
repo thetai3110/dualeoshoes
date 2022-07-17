@@ -1,5 +1,5 @@
 import React from 'react';
-import icClose from '../../assets/images/Home/ic_close.svg';
+import icClose from '../../assets/images/ic_close.svg';
 import SliderCustom from '../slider/SliderCustom';
 import './FooterGallery.scss';
 

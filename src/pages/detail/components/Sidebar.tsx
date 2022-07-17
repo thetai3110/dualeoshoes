@@ -1,7 +1,7 @@
-import policy1 from '../../../assets/images/Home/policy_1.png';
-import policy2 from '../../../assets/images/Home/policy_2.png';
-import policy3 from '../../../assets/images/Home/policy_3.png';
-import policy4 from '../../../assets/images/Home/policy_4.png';
+import policy1 from '../../../assets/images/policy_1.png';
+import policy2 from '../../../assets/images/policy_2.png';
+import policy3 from '../../../assets/images/policy_3.png';
+import policy4 from '../../../assets/images/policy_4.png';
 
 import './Sidebar.scss';
 

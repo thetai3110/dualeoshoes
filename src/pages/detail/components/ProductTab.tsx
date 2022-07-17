@@ -1,5 +1,5 @@
 import React from 'react';
-import icStar from '../../../assets/images/Home/ic_star.svg';
+import icStar from '../../../assets/images/ic_star.svg';
 
 import './ProductTab.scss';
 

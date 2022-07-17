@@ -1,5 +1,5 @@
 import React from 'react';
-import icUp from '../../assets/images/Home/ic_up.svg';
+import icUp from '../../assets/images/ic_up.svg';
 import './BackToTop.scss';
 
 export default function BackToTop() {

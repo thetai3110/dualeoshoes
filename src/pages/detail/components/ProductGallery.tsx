@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactImageMagnify from 'react-image-magnify';
-import icExpand from '../../../assets/images/Home/ic_expand.svg';
-import icClose from '../../../assets/images/Home/ic_close.svg';
+import icExpand from '../../../assets/images/ic_expand.svg';
+import icClose from '../../../assets/images/ic_close.svg';
 import './ProductGallery.scss';
 
 export default function ProductGallery() {

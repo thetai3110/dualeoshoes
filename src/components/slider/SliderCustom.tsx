@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
-import icNext from '../../assets/images/Home/ic_next.svg';
-import icPre from '../../assets/images/Home/ic_pre.svg';
+import icNext from '../../assets/images/ic_next.svg';
+import icPre from '../../assets/images/ic_pre.svg';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
