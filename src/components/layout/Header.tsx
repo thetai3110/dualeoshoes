@@ -125,7 +125,7 @@ export default function Header() {
             <div className='THdIudfPKj pcvGDbNZiN'></div>
             <div className='THdIudfPKj qMdxUAjtee'>
               <div className='pQDTolpXBK'>
-                <span>Giỏ hàng</span>
+                <div className='GNEcpjzyzm'>Giỏ hàng </div>
                 <img src={icShopping} alt='' />
               </div>
               <div className='fEHXKFuHKl'><div className='dkmMsfIvBq'>Chưa có sản phẩm trong giỏ hàng.</div></div>

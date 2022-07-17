@@ -77,3 +77,11 @@
         }
     }
 }
+@keyframes cartAnimation {
+    from {transform: translateX(320px);}
+    to {transform: translateX(0);}
+}  
+@keyframes closeIconAnimation {
+    from {transform: translateY(30px);}
+    to {transform: translateY(0);}
+}  

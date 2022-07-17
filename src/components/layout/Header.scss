@@ -119,20 +119,6 @@
                     &:first-child{
                         margin-left: 0 !important;
                     }
-                    &.NsxKxwluwx {
-                        .LGWTNhpqZl {
-                            line-height: 16px;
-                            padding: 0 15px;
-                            img {
-                                width: 20px;
-                                opacity: 1;
-                            }
-                            .CcWsLQkNWL{
-                                animation: searchBoxAnimation .2s;
-                                opacity: 0;
-                            }
-                        }
-                    }
                     &.qMdxUAjtee {
                         position: relative;
                         font-size: .9em;
@@ -140,12 +126,15 @@
                         .pQDTolpXBK {
                             line-height: 16px;
                             padding: 0 15px;
-                            span, img{
+                            &:hover{
+                                color: currentColor !important;
+                            }
+                            .GNEcpjzyzm, img{
                                 display: inline-block;
                                 vertical-align: middle;
                             }
-                            &:hover{
-                                color: currentColor !important;
+                            .GNEcpjzyzm{
+                                padding-right: 3.5px;
                             }
                             img {
                                 width: 20px;
@@ -311,11 +300,7 @@
             }
         }
     }
-}
-@keyframes cartAnimation {
-    from {transform: translateX(320px);}
-    to {transform: translateX(0);}
-}   
+} 
 @keyframes menuLeftAnimation {
     from {transform: translateX(-320px);}
     to {transform: translateX(0);}
@@ -323,8 +308,4 @@
 @keyframes closeIconAnimation {
     from {transform: translateY(30px);}
     to {transform: translateY(0);}
-}  
-@keyframes searchBoxAnimation {
-    from {transform: translateY(0);}
-    to { transform: translateY(-30px); }
 }  

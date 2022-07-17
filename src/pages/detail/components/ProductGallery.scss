@@ -47,19 +47,17 @@
             margin-right: 0.12em;
             min-width: 2.5em;
             border: 2px solid currentColor;
-            background-color: transparent;
             line-height: 2.19em;
             border-radius: 999px !important;
-            object-fit: cover;
             color: silver;
             text-align: center;
             img{
+                position: relative;
+                top: -1.5px;
                 width: 18px;
                 filter: brightness(0) invert(75%);
                 vertical-align: middle;
                 line-height: 1.2;
-                top: -1.5px;
-                position: relative;
             }
             &:hover{
                 border-color: #e32124;
@@ -72,10 +70,9 @@
     }
     .LzaQxriKwQ{
         z-index: 1001 !important;
-        cursor: pointer;
         position: fixed;
-        z-index: 100;
         top: -5px;
+        cursor: pointer;
         right: 0;
         .GQDzUHyXlB{
             width: 40px;
@@ -106,13 +103,13 @@
             transform: translateY(-50%);
         }
         img{
+            position: absolute;
+            top: 0;
+            left: 0;
             opacity: 1 !important;
             background: linear-gradient(black, white);
             cursor: zoom-in;
             display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
             transition: opacity 1s;
         }
     }
