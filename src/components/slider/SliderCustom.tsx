@@ -9,22 +9,24 @@ import "slick-carousel/slick/slick-theme.css";
 import './SliderCustom.scss';
 
 interface Props {
+    isAlwaysShowArrow?: boolean,
     onClick: Function
 }
 
 function NextArrow(props: Props) {
-    const { onClick } = props;
+    const { onClick, isAlwaysShowArrow } = props;
     return (
-        <div className="CXvKRWhaHx slick-next" onClick={() => onClick()}>
+        <div className={`CXvKRWhaHx slick-next ${isAlwaysShowArrow ? 'cRPhDKmTQw' : ''}`}onClick={() => onClick()}>
             <img src={icNext} alt="" />
         </div>
     );
 }
 
 function PreArrow(props: Props) {
-    const { onClick } = props;
+    const { onClick, isAlwaysShowArrow } = props;
+    console.log(isAlwaysShowArrow)
     return (
-        <div className="CXvKRWhaHx slick-prev" onClick={() => onClick()}>
+        <div className={`CXvKRWhaHx slick-prev ${isAlwaysShowArrow ? 'cRPhDKmTQw' : ''}`} onClick={() => onClick()}>
             <img src={icPre} alt="" />
         </div>
     );
@@ -32,15 +34,16 @@ function PreArrow(props: Props) {
 
 interface SliderCustomProps {
     settings: {}
+    isAlwaysShowArrow?: boolean,
     children?: JSX.Element[];
 }
 
-export default function SliderCustom({ settings, children }: SliderCustomProps) {
+export default function SliderCustom({ settings, isAlwaysShowArrow, children }: SliderCustomProps) {
     const sliderRef = React.useRef<Slider>(null);
     const settingsDefault = {
         ...settings,
-        nextArrow: <NextArrow onClick={() => sliderRef.current?.slickNext()} />,
-        prevArrow: <PreArrow onClick={() => sliderRef.current?.slickPrev()} />,
+        nextArrow: <NextArrow onClick={() => sliderRef.current?.slickNext()} isAlwaysShowArrow={isAlwaysShowArrow}/>,
+        prevArrow: <PreArrow onClick={() => sliderRef.current?.slickPrev()} isAlwaysShowArrow={isAlwaysShowArrow}/>,
     };
 
     return (

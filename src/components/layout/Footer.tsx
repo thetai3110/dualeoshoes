@@ -3,50 +3,12 @@ import mail from '../../assets/images/Home/ic_mail.svg';
 import phone from '../../assets/images/Home/ic_phone.svg';
 
 import './Footer.scss';
+import FooterGallery from './FooterGallery';
 
 export default function Footer() {
     return (
         <div className="OsPwnbCmch">
-            <div className='JbkBqkpnEo'>
-                <div className='LPdYJfmCXP'>
-                    <div className='GhcDbDrkde'>
-                        <div className='OQCeehNRxg'>
-                            <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand1-1.png" alt='' />
-                        </div>
-                        <div className="TJfvUOjrBHp"></div>
-                    </div>
-                    <div className='GhcDbDrkde'>
-                        <div className='OQCeehNRxg'>
-                            <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand2-1.png" alt='' />
-                        </div>
-                        <div className="TJfvUOjrBHp"></div>
-                    </div>
-                    <div className='GhcDbDrkde'>
-                        <div className='OQCeehNRxg'>
-                            <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand1.png" alt='' />
-                        </div>
-                        <div className="TJfvUOjrBHp"></div>
-                    </div>
-                    <div className='GhcDbDrkde'>
-                        <div className='OQCeehNRxg'>
-                            <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand2.png" alt='' />
-                        </div>
-                        <div className="TJfvUOjrBHp"></div>
-                    </div>
-                    <div className='GhcDbDrkde'>
-                        <div className='OQCeehNRxg'>
-                            <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand3.png" alt='' />
-                        </div>
-                        <div className="TJfvUOjrBHp"></div>
-                    </div>
-                    <div className='GhcDbDrkde'>
-                        <div className='OQCeehNRxg'>
-                            <img src="http://mauweb.monamedia.net/dualeoshoes/wp-content/uploads/2019/05/brand4.png" alt='' />
-                        </div>
-                        <div className="TJfvUOjrBHp"></div>
-                    </div>
-                </div>
-            </div>
+           <FooterGallery />
             <div style={{ paddingTop: '70px' }}></div>
             <div className='lZhzRlAVIC TlbZfgabaX'>
                 <div className='fJdhvutuUF'>

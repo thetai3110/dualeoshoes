@@ -2,6 +2,7 @@
     &:hover .CXvKRWhaHx {
         display: block;
     }
+
     .slick-prev,
     .slick-next {
         z-index: 1;
@@ -27,6 +28,9 @@
             filter: invert(21%) sepia(34%) saturate(4797%) hue-rotate(338deg) brightness(110%) contrast(119%);
             animation: hoverArrowBtn .5s;
         }
+    }
+    .cRPhDKmTQw{
+        display: block !important;
     }
 }
 @keyframes hoverArrowBtn {
